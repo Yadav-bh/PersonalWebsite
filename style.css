@@ -782,8 +782,8 @@ footer {
 
 /* Visitor Counter */
 .visitor-counter {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
+    color: yellow;
+    font-size: 0.12rem;
     font-weight: 400;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;

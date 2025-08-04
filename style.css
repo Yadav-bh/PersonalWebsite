@@ -730,26 +730,36 @@ body {
 .navbar .visitor-counter {
     display: flex;
     align-items: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: #000000; /* Black text */
+    background-color: white; /* White background */
     font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
     white-space: nowrap;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-left: 0.5rem;
 }
 
 .navbar .visitor-counter:hover {
-    color: #fff;
+    background-color: #f8f9fa;
+    color: #333333; /* Slightly lighter black on hover */
     text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar .visitor-counter i {
-    margin-right: 4px;
-    color: #ffc107;
+    color: #000000; /* Black icon */
+    margin-right: 6px;
+}
+
+.navbar .visitor-counter span {
+    color: #000000; /* Ensure 'Visitors:' text is black */
 }
 
 .navbar .visitor-counter #visitorCount {
     font-weight: 600;
-    color: #fff;
+    color: #000000; /* Ensure count is black */
     margin-left: 2px;
 }
 

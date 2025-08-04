@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydropower Sector Analysis | NEPSE Guide</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .sector-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+        .key-point {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .key-point:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .point-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+        .indicator-table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+        }
+        .indicator-table th, .indicator-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .indicator-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .indicator-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-to-home:hover {
+            text-decoration: underline;
+        }
+        .tips-section {
+            background-color: #e9f5ff;
+            border-left: 4px solid #1e3c72;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">YB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a class="dropdown-item" href="#">Commercial Banks</a></li>
+                            <li><a class="dropdown-item" href="#">Development Banks</a></li>
+                            <li><a class="dropdown-item" href="#">Finance</a></li>
+                            <li><a class="dropdown-item" href="#">Hotels</a></li>
+                            <li><a class="dropdown-item active" href="hydropower.html">Hydro Power</a></li>
+                            <li><a class="dropdown-item" href="#">Investment</a></li>
+                            <li><a class="dropdown-item" href="#">Life Insurance</a></li>
+                            <li><a class="dropdown-item" href="#">Manufacturing</a></li>
+                            <li><a class="dropdown-item" href="#">Microfinance</a></li>
+                            <li><a class="dropdown-item" href="#">Non Life Insurance</a></li>
+                            <li><a class="dropdown-item" href="#">Others</a></li>
+                            <li><a class="dropdown-item" href="#">Tradings</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Social Sharing Widget -->
+    <div class="social-share-widget">
+        <a href="#" class="share-facebook" data-social="facebook">
+            <i class="bi bi-facebook facebook"></i>
+            <span class="share-count" data-count="0">0</span>
+        </a>
+        <a href="#" class="share-twitter" data-social="twitter">
+            <i class="bi bi-twitter twitter"></i>
+            <span class="share-count" data-count="0">0</span>
+        </a>
+        <a href="#" class="share-linkedin" data-social="linkedin">
+            <i class="bi bi-linkedin linkedin"></i>
+            <span class="share-count" data-count="0">0</span>
+        </a>
+        <a href="#" class="share-whatsapp" data-social="whatsapp">
+            <i class="bi bi-whatsapp whatsapp"></i>
+            <span class="share-count" data-count="0">0</span>
+        </a>
+        <a href="#" class="share-link" data-social="link">
+            <i class="bi bi-link-45deg link"></i>
+            <span class="share-count">Copy</span>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <a href="index.html" class="back-to-home">
+            <i class="bi bi-arrow-left"></i> Back to Home
+        </a>
+
+        <header class="sector-header text-center mb-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Hydropower Sector in NEPSE</h1>
+                <p class="lead">Comprehensive Guide to Investing in Hydropower Companies</p>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Key Points Section -->
+                <section class="mb-5">
+                    <h2 class="mb-4">🔷 Key Points of Hydropower Sector in NEPSE</h2>
+                    
+                    <div class="key-point">
+                        <h4><span class="point-number">1</span> Regulated Tariff System (PPA – Power Purchase Agreement)</h4>
+                        <p>Hydropower companies sell electricity to NEA under a fixed price agreement.</p>
+                        <p><strong>Two types of PPAs:</strong></p>
+                        <ul>
+                            <li><strong>Indexed PPA</strong> – price increases with inflation (safer and better).</li>
+                            <li><strong>Flat PPA</strong> – price remains constant for the contract period.</li>
+                        </ul>
+                        <p>Companies with Indexed PPA are more profitable and less risky long-term.</p>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">2</span> Capacity (MW) & Generation Potential</h4>
+                        <p>The size of the project in Megawatts (MW) is key.</p>
+                        <p>But even more important is: how much electricity is actually generated, especially:</p>
+                        <ul>
+                            <li>In wet season (high) vs. dry season (very low)</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">3</span> COD (Commercial Operation Date)</h4>
+                        <ul>
+                            <li>Revenue starts only after COD.</li>
+                            <li>Before COD, the company is spending — no income.</li>
+                            <li>If COD is delayed → high risk, less return.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">4</span> Construction Risk & Cost Overrun</h4>
+                        <p>Many projects face delays and budget overruns.</p>
+                        <p>That means:</p>
+                        <ul>
+                            <li>More debt</li>
+                            <li>Delayed income</li>
+                            <li>Late dividends</li>
+                            <li>Lower stock performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">5</span> Loan-to-Equity Ratio (Debt Risk)</h4>
+                        <p>Most hydropower projects are highly debt-funded.</p>
+                        <p>If debt is too high:</p>
+                        <ul>
+                            <li>Interest payments reduce profits</li>
+                            <li>Weak dividend potential</li>
+                            <li>Higher financial risk</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">6</span> Dividend Potential (Bonus + Cash)</h4>
+                        <ul>
+                            <li>In early years, companies give bonus shares, not cash.</li>
+                            <li>After COD and stable income, some start giving cash dividends.</li>
+                            <li>Always check: past dividend history + future potential.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">7</span> Transmission Line Risk</h4>
+                        <p>If NEA or govt. doesn't build transmission lines in time, electricity can't be sold.</p>
+                        <p>That results in losses, despite generation.</p>
+                        <p>Always check: "Is transmission line ready?"</p>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">8</span> Environmental & Political Risk</h4>
+                        <ul>
+                            <li>Delays in Environment Impact Assessment (EIA), forest clearance, etc.</li>
+                            <li>Changes in govt. policy, local opposition can delay or cancel projects.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">9</span> Right Share Dilution</h4>
+                        <p>Many hydro companies raise capital through right shares.</p>
+                        <p>This increases total shares → reduces your ownership percentage (dilution).</p>
+                        <p>Always check: "How often do they issue right shares?"</p>
+                    </div>
+
+                    <div class="key-point">
+                        <h4><span class="point-number">10</span> Seasonal Production Risk</h4>
+                        <ul>
+                            <li>Winter & dry months (Chaitra–Asar) → very low power generation.</li>
+                            <li>Monsoon → high production, but sometimes wasted if grid can't handle it.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Financial Indicators Section -->
+                <section class="mb-5">
+                    <h3 class="mb-4">🟩 Key Financial Indicators to Watch:</h3>
+                    <div class="table-responsive">
+                        <table class="indicator-table">
+                            <thead>
+                                <tr>
+                                    <th>Indicator</th>
+                                    <th>Why It's Important</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>EPS (Earnings Per Share)</strong></td>
+                                    <td>Is the company profitable?</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Net Worth per Share</strong></td>
+                                    <td>Book value of the company</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROE (Return on Equity)</strong></td>
+                                    <td>Return on your investment</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Debt-to-Equity Ratio</strong></td>
+                                    <td>Financial risk level</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>COD Status</strong></td>
+                                    <td>Revenue start point</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Investment Tips Section -->
+                <section class="tips-section">
+                    <h3 class="mb-4">✅ Investment Tips for Hydropower Sector:</h3>
+                    <p><strong>Prioritize companies that:</strong></p>
+                    <ul>
+                        <li>Have completed projects (COD done)</li>
+                        <li>Have Indexed PPAs</li>
+                        <li>Are already generating revenue and dividends</li>
+                    </ul>
+                    
+                    <p class="mt-4"><strong>Avoid companies that:</strong></p>
+                    <ul>
+                        <li>Are still under construction with uncertain COD</li>
+                        <li>Have no transmission line</li>
+                        <li>Keep issuing right shares frequently</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Yadav Bhandari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Social Sharing JS -->
+    <script src="js/social-share.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

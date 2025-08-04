@@ -726,6 +726,45 @@ body {
 }
 
 /* Profile image styles */
+/* Navbar Visitor Counter */
+.navbar .visitor-counter {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.navbar .visitor-counter:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .visitor-counter i {
+    margin-right: 4px;
+    color: #ffc107;
+}
+
+.navbar .visitor-counter #visitorCount {
+    font-weight: 600;
+    color: #fff;
+    margin-left: 2px;
+}
+
+/* Make counter stack on mobile */
+@media (max-width: 991.98px) {
+    .navbar .visitor-counter {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .navbar .visitor-counter span:first-of-type {
+        display: none;
+    }
+}
+
 .profile-img {
     width: 180px;
     height: 180px;

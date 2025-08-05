@@ -730,6 +730,7 @@ body {
 .navbar .visitor-counter {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     color: #000000; /* Black text */
     background-color: white; /* White background */
     font-size: 0.9rem;
@@ -755,11 +756,32 @@ body {
 
 .navbar .visitor-counter span {
     color: #000000; /* Ensure 'Visitors:' text is black */
+=======
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.navbar .visitor-counter:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .visitor-counter i {
+    margin-right: 4px;
+    color: #ffc107;
+>>>>>>> recovery-branch
 }
 
 .navbar .visitor-counter #visitorCount {
     font-weight: 600;
+<<<<<<< HEAD
     color: #000000; /* Ensure count is black */
+=======
+    color: #fff;
+>>>>>>> recovery-branch
     margin-left: 2px;
 }
 
@@ -831,8 +853,8 @@ footer {
 
 /* Visitor Counter */
 .visitor-counter {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
+    color: yellow;
+    font-size: 0.12rem;
     font-weight: 400;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;

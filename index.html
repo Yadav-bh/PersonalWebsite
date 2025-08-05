@@ -13,7 +13,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow" style="z-index: 1030;">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">YB</a>
 
@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about" data-i18n="about">About</a></li>
                     <li class="nav-item dropdown">
@@ -29,18 +29,25 @@
                             Education
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="educationDropdown">
-                            <li><a class="dropdown-item" href="#">Commercial Banks</a></li>
-                            <li><a class="dropdown-item" href="#">Development Banks</a></li>
-                            <li><a class="dropdown-item" href="#">Finance</a></li>
-                            <li><a class="dropdown-item" href="#">Hotels</a></li>
-                            <li><a class="dropdown-item" href="hydropower.html">Hydro Power</a></li>
-                            <li><a class="dropdown-item" href="#">Investment</a></li>
-                            <li><a class="dropdown-item" href="life-insurance.html">Life Insurance</a></li>
-                            <li><a class="dropdown-item" href="#">Manufacturing</a></li>
-                            <li><a class="dropdown-item" href="#">Microfinance</a></li>
-                            <li><a class="dropdown-item" href="#">Non Life Insurance</a></li>
-                            <li><a class="dropdown-item" href="#">Others</a></li>
-                            <li><a class="dropdown-item" href="#">Tradings</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="sectorAnalysisDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sector Analysis
+                                </a>
+                                <ul class="dropdown-menu dropdown-submenu" aria-labelledby="sectorAnalysisDropdown">
+                                    <li><a class="dropdown-item" href="#commercial-banks">Commercial Banks</a></li>
+                                    <li><a class="dropdown-item" href="#development-banks">Development Banks</a></li>
+                                    <li><a class="dropdown-item" href="#finance">Finance</a></li>
+                                    <li><a class="dropdown-item" href="#hotels">Hotels</a></li>
+                                    <li><a class="dropdown-item" href="#hydropower">Hydro Power</a></li>
+                                    <li><a class="dropdown-item" href="#investment">Investment</a></li>
+                                    <li><a class="dropdown-item" href="#life-insurance">Life Insurance</a></li>
+                                    <li><a class="dropdown-item" href="#manufacturing">Manufacturing</a></li>
+                                    <li><a class="dropdown-item" href="#microfinance">Microfinance</a></li>
+                                    <li><a class="dropdown-item" href="#non-life-insurance">Non Life Insurance</a></li>
+                                    <li><a class="dropdown-item" href="#others">Others</a></li>
+                                    <li><a class="dropdown-item" href="#tradings">Tradings</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#services" data-i18n="services">Services</a></li>
@@ -48,11 +55,11 @@
                     <li class="nav-item"><a class="nav-link" href="#blog" data-i18n="blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials" data-i18n="testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="contact">Contact</a></li>
-                    <li class="nav-item d-flex align-items-center ms-2">
-                        <div class="visitor-counter nav-link py-2">
-                            <i class="bi bi-people-fill me-1"></i>
-                            <span>Visitors: </span>
-                            <span id="visitorCount">0</span>
+                    <li class="nav-item d-flex align-items-center px-2">
+                        <div class="visitor-counter bg-white text-black rounded-pill px-3 py-1 d-flex align-items-center">
+                            <i class="bi bi-people-fill me-1 text-primary"></i>
+                            <span class="me-1">Visitors:</span>
+                            <span id="visitorCount" class="fw-bold">0</span>
                         </div>
                     </li>
                     <li class="nav-item ms-2">
@@ -69,19 +76,20 @@
 
     <!-- Hero Banner -->
     <section id="home" class="hero-banner home-section py-5">
-        <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100 py-5">
-            <div class="text-center">
+        
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between min-vh-100 py-5">
+            <div class="text-center text-lg-start mb-5 mb-lg-0" style="max-width: 600px;">
                 <img src="yadav.jpg.jpg" alt="Yadav Bhandari" class="hero-profile-img rounded-circle shadow-lg mb-4">
                 <h1 class="display-4 fw-bold mb-3">Yadav Bhandari</h1>
                 <p class="lead mb-4">NEPSE Investment Expert | Stock Market Trader | Financial Advisor</p>
-                <div class="d-flex gap-3 justify-content-center">
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
                     <a href="#portfolio" class="btn btn-warning btn-lg">View Portfolio</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+                    <a href="#contact" class="btn btn-warning btn-lg">Get in Touch</a>
                 </div>
             </div>
             
             <!-- Warren Buffett Quote -->
-            <div class="quote-card text-center mt-5" style="max-width: 600px;">
+            <div class="quote-card ms-lg-5" style="max-width: 500px; margin-top: -40px;">
                 <blockquote class="mb-2">
                     <p class="h4 fst-italic text-white mb-1">"Be fearful when others are greedy and be greedy when others are fearful."</p>
                     <footer class="blockquote-footer mt-3">
@@ -132,6 +140,180 @@ My mission is to empower individuals with the knowledge and tools they need to n
                     <li class="list-inline-item m-2"><span class="badge bg-danger p-3">Market Analyst</span></li>
                 </ul>
             </div>
+        </div>
+    </section>
+
+    <!-- Sector Analysis -->
+    <section id="sector-analysis" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Sector Analysis</h2>
+            <p class="text-center text-white mb-5">Explore key market sectors with our in-depth analysis and insights</p>
+            
+            <div class="row g-4">
+                <!-- Row 1 -->
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-bank fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Commercial Banks</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-building fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Development Banks</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-info bg-opacity-10 text-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-cash-coin fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Finance</h5>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-warning bg-opacity-10 text-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-building fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Hotels</h5>
+                    </div>
+                </div>
+                <!-- Row 2 continued -->
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-danger bg-opacity-10 text-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-lightning-charge fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Hydro Power</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-graph-up-arrow fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Investment</h5>
+                    </div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-shield-check fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Life Insurance</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-info bg-opacity-10 text-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-gear fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Manufacturing</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-warning bg-opacity-10 text-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-coin fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Microfinance</h5>
+                    </div>
+                </div>
+                
+                <!-- Row 4 -->
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-danger bg-opacity-10 text-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-shield-exclamation fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Non Life Insurance</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-grid-3x3 fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Others</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
+                        <div class="sector-icon bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-arrow-left-right fs-1"></i>
+                        </div>
+                        <h5 class="mb-0">Tradings</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .sector-item {
+                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    border: 1px solid rgba(0,0,0,0.05);
+                    position: relative;
+                    overflow: hidden;
+                    background: white;
+                    z-index: 1;
+                }
+                .sector-item::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                    z-index: -1;
+                }
+                .sector-item:hover {
+                    transform: translateY(-8px) scale(1.02);
+                    box-shadow: 0 15px 30px rgba(0,0,0,0.12) !important;
+                }
+                .sector-item:hover::before {
+                    opacity: 1;
+                }
+                .sector-icon {
+                    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    will-change: transform;
+                }
+                .sector-item:hover .sector-icon {
+                    transform: scale(1.15) rotate(5deg);
+                    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+                }
+                .sector-item h5 {
+                    transition: transform 0.3s ease, color 0.3s ease;
+                    position: relative;
+                    display: inline-block;
+                }
+                .sector-item:hover h5 {
+                    transform: translateY(-2px);
+                    color: #0d6efd;
+                }
+                .sector-item:hover .sector-icon.bg-primary { background-color: rgba(13, 110, 253, 0.15) !important; }
+                .sector-item:hover .sector-icon.bg-success { background-color: rgba(25, 135, 84, 0.15) !important; }
+                .sector-item:hover .sector-icon.bg-info { background-color: rgba(13, 202, 240, 0.15) !important; }
+                .sector-item:hover .sector-icon.bg-warning { background-color: rgba(255, 193, 7, 0.15) !important; }
+                .sector-item:hover .sector-icon.bg-danger { background-color: rgba(220, 53, 69, 0.15) !important; }
+            </style>
         </div>
     </section>
 
@@ -325,68 +507,368 @@ My mission is to empower individuals with the knowledge and tools they need to n
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="py-5 testimonials-section bg-light">
-        <div class="container">
+    <section id="testimonials" class="py-5 testimonials-section bg-light position-relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.05;">
+            <div class="position-absolute" style="top: 20%; left: 10%; width: 100px; height: 100px; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; background: linear-gradient(45deg, #ffc107, #fd7e14); transform: rotate(45deg);"></div>
+            <div class="position-absolute" style="bottom: 10%; right: 15%; width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(45deg, #0d6efd, #0dcaf0);"></div>
+        </div>
+        
+        <div class="container position-relative">
+            <!-- Social Proof Badges -->
+            <div class="row g-4 mb-5 text-center">
+                <div class="col-md-3 col-6">
+                    <div class="bg-white p-3 rounded-3 shadow-sm h-100">
+                        <h3 class="display-5 fw-bold text-primary mb-0">500+</h3>
+                        <p class="text-muted mb-0">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="bg-white p-3 rounded-3 shadow-sm h-100">
+                        <h3 class="display-5 fw-bold text-success mb-0">98%</h3>
+                        <p class="text-muted mb-0">Success Rate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="bg-white p-3 rounded-3 shadow-sm h-100">
+                        <h3 class="display-5 fw-bold text-warning mb-0">10+</h3>
+                        <p class="text-muted mb-0">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="bg-white p-3 rounded-3 shadow-sm h-100">
+                        <h3 class="display-5 fw-bold text-info mb-0">4.9/5</h3>
+                        <p class="text-muted mb-0">Client Rating</p>
+                    </div>
+                </div>
+            </div>
+
             <h2 class="section-title text-center mb-5">What Our Clients Say</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card testimonial-card mx-auto" style="max-width: 700px;">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+            <p class="text-center text-muted mb-5 lead">Don't just take our word for it - hear from our community of successful investors</p>
+            
+            <div class="row g-4 mb-5">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="60" height="60" alt="Rajesh Shrestha">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Rajesh Shrestha</h6>
+                                    <small class="text-muted">Long-term Investor</small>
+                                    <div class="mt-1">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
                                 </div>
-                                <p class="card-text fs-5">"Yadav's NEPSE market analysis has been a game-changer for my investment strategy. His technical analysis helped me identify entry and exit points I would have otherwise missed."</p>
-                                <h6 class="card-subtitle mt-3 text-muted">— Rajesh Shrestha, Long-term Investor</h6>
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testimonial-card mx-auto" style="max-width: 700px;">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-half text-warning"></i>
-                                </div>
-                                <p class="card-text fs-5">"The stock recommendations have consistently outperformed the market. I've seen a 35% return on my portfolio since following Yadav's advice."</p>
-                                <h6 class="card-subtitle mt-3 text-muted">— Anjali Gurung, Retail Trader</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testimonial-card mx-auto" style="max-width: 700px;">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                </div>
-                                <p class="card-text fs-5">"As a beginner in the Nepalese stock market, Yadav's fundamental analysis tutorials and stock picks have been invaluable. I feel much more confident in my investment decisions now."</p>
-                                <h6 class="card-subtitle mt-3 text-muted">— Suman Basnet, New Investor</h6>
+                            <p class="card-text">"Yadav's NEPSE market analysis has been a game-changer for my investment strategy. His technical analysis helped me identify entry and exit points I would have otherwise missed."</p>
+                            <div class="text-muted small">
+                                <i class="bi bi-quote me-2"></i>2 months ago
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="60" height="60" alt="Anjali Gurung">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Anjali Gurung</h6>
+                                    <small class="text-muted">Retail Trader</small>
+                                    <div class="mt-1">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"The stock recommendations have consistently outperformed the market. I've seen a 35% return on my portfolio since following Yadav's advice."</p>
+                            <div class="text-muted small">
+                                <i class="bi bi-quote me-2"></i>1 month ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-3" width="60" height="60" alt="Suman Basnet">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Suman Basnet</h6>
+                                    <small class="text-muted">New Investor</small>
+                                    <div class="mt-1">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"As a beginner in the Nepalese stock market, Yadav's fundamental analysis tutorials and stock picks have been invaluable. I feel much more confident in my investment decisions now."</p>
+                            <div class="text-muted small">
+                                <i class="bi bi-quote me-2"></i>2 weeks ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Testimonials -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card bg-primary text-white">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/women/63.jpg" class="rounded-circle me-3 border border-3 border-white" width="60" height="60" alt="Priya Sharma">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Priya Sharma</h6>
+                                    <small>Day Trader</small>
+                                    <div class="mt-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"The technical analysis webinars are exceptional! I've improved my trading strategy significantly and now make more informed decisions. The support team is always helpful too."</p>
+                            <div class="small opacity-75">
+                                <i class="bi bi-quote me-2"></i>3 weeks ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card bg-dark text-white">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/82.jpg" class="rounded-circle me-3 border border-3 border-warning" width="60" height="60" alt="Amit Gurung">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Amit Gurung</h6>
+                                    <small>Portfolio Manager</small>
+                                    <div class="mt-1">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"The fundamental analysis reports are thorough and accurate. They've helped me build a diversified portfolio that consistently beats the market average. Highly recommended!"</p>
+                            <div class="small text-muted">
+                                <i class="bi bi-quote me-2"></i>1 month ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Interactive Rating -->
             <div class="text-center mt-5">
-                <a href="#contact" class="btn btn-warning btn-lg">Start Your Investment Journey</a>
+                <div class="bg-white p-4 rounded-3 shadow-sm d-inline-block">
+                    <h4 class="mb-3">Rate Your Experience</h4>
+                    <div class="rating-stars mb-3">
+                        <input type="radio" id="star5" name="rating" value="5" class="d-none">
+                        <label for="star5" class="star">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" class="d-none">
+                        <label for="star4" class="star">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" class="d-none">
+                        <label for="star3" class="star">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" class="d-none">
+                        <label for="star2" class="star">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" class="d-none">
+                        <label for="star1" class="star">★</label>
+                    </div>
+                    <button class="btn btn-warning" id="submitRating">Submit Rating</button>
+                </div>
+            </div>
+
+            <!-- Sector Analysis -->
+            <section id="sector-analysis" class="py-5">
+                <div class="container">
+                    <h2 class="section-title text-center mb-5">Sector Analysis</h2>
+                    <p class="text-center text-muted mb-5">Detailed analysis of key market sectors to help you make informed investment decisions</p>
+                    
+                    <div class="row g-4">
+                        <!-- Banking Sector -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">Banking & Finance</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="bankingAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="bankingHeading">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bankingCollapse" aria-expanded="false" aria-controls="bankingCollapse">
+                                                    View Analysis
+                                                </button>
+                                            </h2>
+                                            <div id="bankingCollapse" class="accordion-collapse collapse" aria-labelledby="bankingHeading" data-bs-parent="#bankingAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>NPL trends and analysis</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>Deposit growth rates</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>Credit expansion analysis</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>Interest rate impact</li>
+                                                        <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>Regulatory updates</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hydropower Sector -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-header bg-success text-white">
+                                    <h5 class="mb-0">Hydropower</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="hydropowerAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="hydropowerHeading">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hydropowerCollapse" aria-expanded="false" aria-controls="hydropowerCollapse">
+                                                    View Analysis
+                                                </button>
+                                            </h2>
+                                            <div id="hydropowerCollapse" class="accordion-collapse collapse" aria-labelledby="hydropowerHeading" data-bs-parent="#hydropowerAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-success me-2"></i>Monsoon impact analysis</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-success me-2"></i>Power purchase agreements</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-success me-2"></i>Infrastructure development</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-success me-2"></i>Government policies</li>
+                                                        <li><i class="bi bi-arrow-right-circle-fill text-success me-2"></i>Export potential</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Insurance Sector -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-header bg-info text-white">
+                                    <h5 class="mb-0">Insurance</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="insuranceAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="insuranceHeading">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#insuranceCollapse" aria-expanded="false" aria-controls="insuranceCollapse">
+                                                    View Analysis
+                                                </button>
+                                            </h2>
+                                            <div id="insuranceCollapse" class="accordion-collapse collapse" aria-labelledby="insuranceHeading" data-bs-parent="#insuranceAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Premium growth trends</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Claim settlement ratios</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>New product analysis</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Market penetration</li>
+                                                        <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Regulatory changes</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Manufacturing Sector -->
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-header bg-warning text-dark">
+                                    <h5 class="mb-0">Manufacturing</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="manufacturingAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="manufacturingHeading">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manufacturingCollapse" aria-expanded="false" aria-controls="manufacturingCollapse">
+                                                    View Analysis
+                                                </button>
+                                            </h2>
+                                            <div id="manufacturingCollapse" class="accordion-collapse collapse" aria-labelledby="manufacturingHeading" data-bs-parent="#manufacturingAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i>Raw material cost analysis</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i>Production capacity</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i>Export/Import trends</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i>Government incentives</li>
+                                                        <li><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i>Competitive landscape</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tourism Sector -->
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-header bg-danger text-white">
+                                    <h5 class="mb-0">Tourism</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="tourismAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="tourismHeading">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tourismCollapse" aria-expanded="false" aria-controls="tourismCollapse">
+                                                    View Analysis
+                                                </button>
+                                            </h2>
+                                            <div id="tourismCollapse" class="accordion-collapse collapse" aria-labelledby="tourismHeading" data-bs-parent="#tourismAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-danger me-2"></i>Visitor arrival trends</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-danger me-2"></i>Seasonal analysis</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-danger me-2"></i>Infrastructure development</li>
+                                                        <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-danger me-2"></i>Government initiatives</li>
+                                                        <li><i class="bi bi-arrow-right-circle-fill text-danger me-2"></i>Investment opportunities</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <div class="text-center mt-5">
+                <h3 class="mb-4">Ready to transform your investment journey?</h3>
+                <a href="#contact" class="btn btn-warning btn-lg px-4 py-2">
+                    <i class="bi bi-chat-square-text me-2"></i>Get Your Free Consultation
+                </a>
+                <p class="text-muted mt-3 small">Join 500+ successful investors today</p>
             </div>
         </div>
     </section>
@@ -478,9 +960,55 @@ My mission is to empower individuals with the knowledge and tools they need to n
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <style>
-            /* Hide dropdown arrow for Education menu */
+            /* Dropdown Menu Styling */
             .nav-item.dropdown .nav-link::after {
                 display: none !important;
+            }
+            
+            /* Nested Dropdown Styling */
+            .dropdown-submenu {
+                position: relative;
+            }
+            
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -1px;
+                margin-left: 0.125rem;
+                border-radius: 0.375rem;
+                display: none;
+                min-width: 10rem;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            }
+            
+            .dropdown-submenu:hover > .dropdown-menu {
+                display: block;
+            }
+            
+            .dropdown-submenu .dropdown-toggle::after {
+                display: inline-block;
+                margin-left: 0.255em;
+                vertical-align: 0.255em;
+                content: "";
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+                float: right;
+                margin-top: 0.5em;
+            }
+            
+            @media (max-width: 991.98px) {
+                .dropdown-submenu .dropdown-menu {
+                    position: static;
+                    margin-left: 1rem;
+                    border: none;
+                    box-shadow: none;
+                }
+                
+                .dropdown-submenu .dropdown-toggle::after {
+                    float: right;
+                }
             }
             
             footer, footer a, footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {

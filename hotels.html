@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Sector Analysis | Yadav Bhandari</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .analysis-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .section-title {
+            color: #0d6efd; /* Blue color for hotel theme */
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .point-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .point-card:hover {
+            transform: translateY(-5px);
+        }
+        .point-number {
+            background-color: #0d6efd;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .point-content h4 {
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+        .point-content p {
+            margin-bottom: 5px;
+        }
+        .highlight {
+            background-color: #e7f1ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-right: 4px solid #0d6efd;
+        }
+        .back-button {
+            margin-bottom: 30px;
+        }
+        .season-box {
+            background: #f8f9fa;
+            border-left: 4px solid #0d6efd;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 0 4px 4px 0;
+        }
+    </style>
+        <link rel="stylesheet" href="css/nav-buttons.css">
+
+            <style>
+                .sector-header {
+                    padding: 1.5rem 0;
+                    position: relative;
+                }
+                .header-underline {
+                    width: 100px;
+                    height: 4px;
+                    background: linear-gradient(90deg, #ffc107, #ff9800);
+                    margin-top: 1rem;
+                    border-radius: 2px;
+                }
+                .text-warning {
+                    color: #ffc107 !important;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                }
+            </style>
+    </head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Yadav Bhandari</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sector-analysis">Sector Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="analysis-container">
+        
+        <div class="sector-header text-center mb-5">
+            <h1 class="display-4 fw-bold text-warning">Hotels Analysis</h1>
+            <div class="header-underline mx-auto"></div>
+        </div>
+        
+        <div class="highlight">
+            <h4 class="mt-0">🏨 Key Points to Analyze Hotel Sector Stocks in Nepal (NEPSE)</h4>
+            <p class="mb-0">The hotel sector is cyclical, highly sensitive to tourism trends, political stability, and global economic factors. But it offers high growth potential and capital gain opportunities when tourism booms.</p>
+        </div>
+
+        <!-- Analysis Points -->
+        <div class="point-card d-flex">
+            <div class="point-number">1</div>
+            <div class="point-content">
+                <h4>Occupancy Rate</h4>
+                <p><strong>What it means:</strong> Percentage of rooms occupied vs available.</p>
+                <p><strong>Why important:</strong> Directly affects revenue.</p>
+                <p><strong>Investor Tip:</strong> A growing occupancy trend signals strong performance.</p>
+            </div>
+        </div>
+
+        <div class="point-card d-flex">
+            <div class="point-number">2</div>
+            <div class="point-content">
+                <h4>Average Room Rate (ARR)</h4>
+                <p><strong>What it means:</strong> Average income earned per occupied room.</p>
+                <p><strong>Why important:</strong> Higher ARR = better pricing power.</p>
+                <p><strong>Look for:</strong> Year-on-year growth in ARR and seasonal spikes.</p>
+            </div>
+        </div>
+
+        <div class="point-card d-flex">
+            <div class="point-number">3</div>
+            <div class="point-content">
+                <h4>Revenue Per Available Room (RevPAR)</h4>
+                <p><strong>Formula:</strong> Occupancy Rate × ARR</p>
+                <p><strong>Why important:</strong> Measures the hotel's ability to generate revenue.</p>
+                <p><strong>Growth:</strong> Indicates operational efficiency.</p>
+            </div>
+        </div>
+
+        <div class="point-card d-flex">
+            <div class="point-number">5</div>
+            <div class="point-content">
+                <h4>Seasonality</h4>
+                <div class="season-box mb-2">
+                    <strong>High Season:</strong> Sep–Nov, Mar–May (peak tourism).
+                </div>
+                <div class="season-box">
+                    <strong>Low Season:</strong> Monsoon and winter.
+                </div>
+                <p class="mt-2"><strong>Why important:</strong> Revenue fluctuates — look at year-round occupancy and income diversification.</p>
+            </div>
+        </div>
+
+        <!-- Continue with other points in the same format -->
+        
+        <div class="alert alert-primary mt-4">
+            <h5>✅ Pro Tips for Hotel Sector Investment:</h5>
+            <p><strong>Look for:</strong></p>
+            <ul>
+                <li>Strong brand (e.g., Soaltee, Oriental)</li>
+                <li>High RevPAR & occupancy rate</li>
+                <li>Recovery in tourism stats post-pandemic</li>
+                <li>Profitable years post-2023 tourism boom</li>
+            </ul>
+            <p class="mb-0"><strong>Avoid:</strong> Companies with high debt and poor dividend history, low occupancy trends over years. Hold for medium-to-long term, especially during economic recovery or Visit Nepal years.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2025 Yadav Bhandari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/nav-buttons.js"></script>
+</body>
+</html>

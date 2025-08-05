@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Companies Analysis | Yadav Bhandari</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .analysis-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .section-title {
+            color: #6f42c1; /* Purple color for finance theme */
+            border-bottom: 2px solid #6f42c1;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .point-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .point-card:hover {
+            transform: translateY(-5px);
+        }
+        .point-number {
+            background-color: #6f42c1;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .point-content h4 {
+            color: #6f42c1;
+            margin-bottom: 10px;
+        }
+        .point-content p {
+            margin-bottom: 5px;
+        }
+        .highlight {
+            background-color: #f3e8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-right: 4px solid #9d4edd;
+        }
+        .back-button {
+            margin-bottom: 30px;
+        }
+    </style>
+        <link rel="stylesheet" href="css/nav-buttons.css">
+
+            <style>
+                .sector-header {
+                    padding: 1.5rem 0;
+                    position: relative;
+                }
+                .header-underline {
+                    width: 100px;
+                    height: 4px;
+                    background: linear-gradient(90deg, #ffc107, #ff9800);
+                    margin-top: 1rem;
+                    border-radius: 2px;
+                }
+                .text-warning {
+                    color: #ffc107 !important;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                }
+            </style>
+    </head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Yadav Bhandari</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sector-analysis">Sector Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="analysis-container">
+        <a href="index.html#sector-analysis" class="btn btn-outline-primary back-button" style="border-color: #6f42c1; color: #6f42c1;">
+            <i class="bi bi-arrow-left"></i> Back to Sectors
+        </a>
+        
+        
+        <div class="sector-header text-center mb-5">
+            <h1 class="display-4 fw-bold text-warning">Finance Companies Analysis</h1>
+            <div class="header-underline mx-auto"></div>
+        </div>
+        
+        <div class="highlight">
+            <h4 class="mt-0">💰 Key Points to Analyze Finance Companies in Nepal (NEPSE)</h4>
+            <p class="mb-0">Finance companies are smaller than commercial and development banks but still operate under NRB. They carry higher risk but potentially higher returns.</p>
+        </div>
+
+        <!-- Analysis Points -->
+        <div class="point-card d-flex">
+            <div class="point-number">1</div>
+            <div class="point-content">
+                <h4>Capital Adequacy Ratio (CAR)</h4>
+                <p><strong>What it means:</strong> Minimum capital required to absorb potential losses.</p>
+                <p><strong>Why it matters:</strong> High CAR means stronger financial cushion.</p>
+                <p><strong>Benchmark:</strong> Must be above 11% (as per NRB).</p>
+            </div>
+        </div>
+
+        <div class="point-card d-flex">
+            <div class="point-number">2</div>
+            <div class="point-content">
+                <h4>Non-Performing Loan (NPL)</h4>
+                <p><strong>What it means:</strong> % of loans not being repaid.</p>
+                <p><strong>Why important:</strong> Higher NPL = riskier finance company.</p>
+                <p><strong>Healthy NPL:</strong> Below 3% is acceptable for this sector.</p>
+            </div>
+        </div>
+
+        <div class="point-card d-flex">
+            <div class="point-number">3</div>
+            <div class="point-content">
+                <h4>Earnings Per Share (EPS)</h4>
+                <p><strong>What it means:</strong> Profit per share.</p>
+                <p><strong>Why important:</strong> Strong EPS means better returns and dividend potential.</p>
+                <p><strong>Good EPS:</strong> Rs. 15+ is considered strong for finance companies.</p>
+            </div>
+        </div>
+
+        <!-- Continue with other points in the same format -->
+        
+        <div class="alert alert-primary mt-4" style="background-color: #f3e8ff; border-color: #9d4edd; color: #4a1d96;">
+            <h5>✅ Investor Pro Tips:</h5>
+            <ul class="mb-0">
+                <li>Finance stocks are riskier but can give quick gains during bull markets.</li>
+                <li>Choose finance companies with low NPL, high EPS, and consistent dividend.</li>
+                <li>Look for stable management and avoid overly diluted or frequently merging companies.</li>
+                <li>Always check quarterly financials — not just annual reports.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2025 Yadav Bhandari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/nav-buttons.js"></script>
+</body>
+</html>

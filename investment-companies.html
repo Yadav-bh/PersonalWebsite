@@ -101,17 +101,63 @@
     </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow" style="z-index: 1030;">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Yadav Bhandari</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#sector-analysis">Sector Analysis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home" data-i18n="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="sectorAnalysisDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sector Analysis
+                                </a>
+                                <ul class="dropdown-menu dropdown-submenu" aria-labelledby="sectorAnalysisDropdown">
+                                    <li><a class="dropdown-item" href="commercial-banks.html">Commercial Banks</a></li>
+                                    <li><a class="dropdown-item" href="development-banks.html">Development Banks</a></li>
+                                    <li><a class="dropdown-item" href="finance-companies.html">Finance</a></li>
+                                    <li><a class="dropdown-item" href="hotels.html">Hotels</a></li>
+                                    <li><a class="dropdown-item" href="hydropower.html">Hydro Power</a></li>
+                                    <li><a class="dropdown-item active" href="investment-companies.html">Investment</a></li>
+                                    <li><a class="dropdown-item" href="life-insurance.html">Life Insurance</a></li>
+                                    <li><a class="dropdown-item" href="manufacturing-processing.html">Manufacturing</a></li>
+                                    <li><a class="dropdown-item" href="microfinance.html">Microfinance</a></li>
+                                    <li><a class="dropdown-item" href="non-life-insurance.html">Non Life Insurance</a></li>
+                                    <li><a class="dropdown-item" href="others.html">Others</a></li>
+                                    <li><a class="dropdown-item" href="trading.html">Trading</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services" data-i18n="services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio" data-i18n="portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog" data-i18n="blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="contact">Contact</a></li>
+                    <li class="nav-item d-flex align-items-center px-2">
+                        <div class="visitor-counter bg-white rounded-pill px-3 py-1 d-flex align-items-center">
+                            <i class="bi bi-people-fill me-1 text-primary"></i>
+                            <span class="me-1">Visitors:</span>
+                            <span id="visitorCount" class="fw-bold" style="color: black !important;">Loading...</span>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <div class="language-switcher nav-link" id="languageSwitcher">
+                            <span class="language-option active" data-lang="en">EN</span>
+                            <span class="language-separator">/</span>
+                            <span class="language-option" data-lang="np">नेपा</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

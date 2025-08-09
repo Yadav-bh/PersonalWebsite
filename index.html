@@ -83,29 +83,94 @@
     </nav>
 
     <!-- Hero Banner -->
-    <section id="home" class="hero-banner home-section py-5">
-
-        <div
-            class="container d-flex flex-column flex-lg-row align-items-center justify-content-between min-vh-100 py-5">
-            <div class="text-center text-lg-start mb-5 mb-lg-0" style="max-width: 600px;">
-                <img src="yadav.jpg.jpg" alt="Yadav Bhandari" class="hero-profile-img rounded-circle shadow-lg mb-4">
-                <h1 class="display-4 fw-bold mb-3">Yadav Bhandari</h1>
-                <p class="lead mb-4">NEPSE Investment Expert | Stock Market Trader | Financial Advisor</p>
-                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                    <a href="#portfolio" class="btn btn-warning btn-lg">View Portfolio</a>
-                    <a href="#contact" class="btn btn-warning btn-lg">Get in Touch</a>
+    <section id="home" class="hero-banner home-section py-5" style="background: #000000;">
+        <div class="container min-vh-100 d-flex align-items-center">
+            <div class="row align-items-center justify-content-between">
+                <!-- Left Column - Profile -->
+                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-4">
+                        <img src="yadav.jpg.jpg" alt="Yadav Bhandari" 
+                             class="me-4 rounded-circle" 
+                             style="width: 160px; height: 160px; object-fit: cover; border: 4px solid #ffc107; box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);">
+                        <div class="text-start">
+                            <h1 class="display-4 fw-bold text-white mb-1">Yadav Bhandari</h1>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-warning me-2" style="width: 30px; height: 2px;"></div>
+                                <p class="lead text-white-50 mb-0">NEPSE Investment Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-white-75 mb-4" style="font-size: 1.1rem; line-height: 1.7;">
+                        Expert stock market analysis and investment strategies tailored for NEPSE. Helping you make informed decisions in the ever-changing financial landscape.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#portfolio" class="btn btn-warning btn-lg px-4 py-2 fw-bold">
+                            <i class="bi bi-briefcase me-2"></i>View Portfolio
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-2 fw-bold" style="color: #ffffff !important;">
+                            <i class="bi bi-chat-dots me-2" style="color: #ffffff !important;"></i>Get in Touch
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="row mt-5 g-4">
+                        <div class="col-4 text-center">
+                            <h3 class="text-warning fw-bold mb-1">10+</h3>
+                            <p class="text-white-50 mb-0">Years Experience</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h3 class="text-warning fw-bold mb-1">500+</h3>
+                            <p class="text-white-50 mb-0">Happy Clients</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h3 class="text-warning fw-bold mb-1">95%</h3>
+                            <p class="text-white-50 mb-0">Success Rate</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Warren Buffett Quote -->
-            <div class="quote-card ms-lg-5" style="max-width: 500px; margin-top: -40px;">
-                <blockquote class="mb-2">
-                    <p class="h4 fst-italic text-white mb-1">"Be fearful when others are greedy and be greedy when
-                        others are fearful."</p>
-                    <footer class="blockquote-footer mt-3">
-                        <cite class="text-warning" title="Warren Buffett">Warren Buffett</cite>
-                    </footer>
-                </blockquote>
+                <!-- Right Column - Quote -->
+                <div class="col-lg-5">
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 end-0">
+                            <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="rgba(255, 193, 7, 0.1)" d="M44.4,-76.1C57.4,-69.2,67.5,-56.1,74.1,-41.2C80.7,-26.3,83.8,-9.5,82.7,6.7C81.6,22.9,76.4,38.6,65.2,49.2C54,59.8,36.9,65.2,21.7,70.7C6.5,76.2,-6.9,81.8,-19.4,79.5C-31.9,77.2,-43.6,67,-55.5,55.4C-67.4,43.7,-79.6,30.5,-84.3,14.3C-89,-1.9,-86.3,-21.1,-76.5,-35.2C-66.7,-49.3,-49.9,-58.3,-35.1,-64.5C-20.3,-70.7,-7.5,-74.1,6.7,-83.9C20.9,-93.7,41.8,-109.9,44.4,-76.1Z" transform="translate(100 100)" />
+                            </svg>
+                        </div>
+                        
+                        <div class="position-relative bg-dark bg-opacity-75 p-4 p-lg-5 rounded-3 border border-warning border-opacity-25" 
+                             style="backdrop-filter: blur(5px);">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="images (11).jpg" 
+                                     alt="Quote Icon" 
+                                     class="rounded-circle me-3" 
+                                     style="width: 80px; height: 80px; object-fit: cover; border: 3px solid #ffc107; box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);">
+                                <div>
+                                    <h5 class="text-warning mb-0 fw-bold">Investment Wisdom</h5>
+                                    <small class="text-white-50">Words to Trade By</small>
+                                </div>
+                            </div>
+                            
+                            <blockquote class="mb-4">
+                                <p class="h4 fst-italic text-white mb-3">
+                                    "Be fearful when others are greedy and be greedy when others are fearful."
+                                </p>
+                                <footer class="d-flex align-items-center">
+                                    <div class="bg-warning me-2" style="width: 30px; height: 2px;"></div>
+                                    <cite class="text-warning fw-bold" title="Warren Buffett">Warren Buffett</cite>
+                                </footer>
+                            </blockquote>
+                            
+                            <div class="d-flex justify-content-end">
+                                <div class="bg-warning bg-opacity-25 p-2 rounded-pill">
+                                    <i class="bi bi-quote text-warning" style="font-size: 1.5rem;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -522,7 +587,7 @@
 
                         <!-- Mero Lagani -->
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://merolagani.com" target="_blank" class="text-decoration-none stock-item">
+                            <a href="https://arthasarokar.com/" target="_blank" class="text-decoration-none stock-item">
                                 <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
                                     <div class="card-body text-center p-4">
                                         <div class="stock-icon-wrapper mb-3">
@@ -531,7 +596,7 @@
                                                     style="font-size: 1.75rem;"></i>
                                             </div>
                                         </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Mero Lagani</h6>
+                                        <h6 class="mb-0 fw-bold text-dark">Artha Sarokar</h6>
                                         <div class="stock-hover-content">
                                             <span class="badge bg-success mt-3 px-3 py-2">View Analysis <i
                                                     class="bi bi-arrow-right ms-1"></i></span>
@@ -544,7 +609,7 @@
 
                         <!-- Bajar Ko Chifar -->
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://bajarko.com" target="_blank" class="text-decoration-none stock-item">
+                            <a href="https://bajarkochirfar.com" target="_blank" class="text-decoration-none stock-item">
                                 <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
                                     <div class="card-body text-center p-4">
                                         <div class="stock-icon-wrapper mb-3">
@@ -586,7 +651,7 @@
 
                         <!-- Artha Sarokar -->
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://arthasarokar.com" target="_blank" class="text-decoration-none stock-item">
+                            <a href="https://nepsetrading.com" target="_blank" class="text-decoration-none stock-item">
                                 <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
                                     <div class="card-body text-center p-4">
                                         <div class="stock-icon-wrapper mb-3">
@@ -594,7 +659,7 @@
                                                 <i class="bi bi-cash-coin text-danger" style="font-size: 1.75rem;"></i>
                                             </div>
                                         </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Artha Sarokar</h6>
+                                        <h6 class="mb-0 fw-bold text-dark">Nepse Trading</h6>
                                         <div class="stock-hover-content">
                                             <span class="badge bg-danger mt-3 px-3 py-2">View Analysis <i
                                                     class="bi bi-arrow-right ms-1"></i></span>
@@ -2508,11 +2573,11 @@
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="p-4 bg-light rounded-3 h-100">
+                    <div class="p-4 bg-light rounded-3 h-100" style="color: #000000 !important;">
                         <i class="bi bi-clock-fill text-warning mb-3" style="font-size: 2rem;"></i>
-                        <h5 class="fw-bold mb-3">Working Hours</h5>
-                        <p class="mb-0">Sun-Fri: 9:00 AM - 5:00 PM</p>
-                        <p class="mb-0">Saturday: Closed</p>
+                        <h5 class="fw-bold mb-3" style="color: #000000 !important;">Working Hours</h5>
+                        <p class="mb-0" style="color: #000000 !important;">Sun-Fri: 9:00 AM - 5:00 PM</p>
+                        <p class="mb-0" style="color: #000000 !important;">Saturday: Closed</p>
                     </div>
                 </div>
             </div>

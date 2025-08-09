@@ -3353,6 +3353,60 @@
     
     <!-- Custom JS -->
     <script src="script.js"></script>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-warning btn-floating btn-lg rounded-circle position-fixed bottom-0 end-0 m-4 d-none" style="z-index: 9999;">
+        <i class="bi bi-arrow-up text-dark"></i>
+    </button>
+
+    <style>
+        #backToTop {
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+        #backToTop:hover {
+            opacity: 1;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        const heroSection = document.getElementById('home');
+
+        // Show/hide back to top button on scroll
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) { // Show after scrolling 300px
+                backToTopButton.classList.remove('d-none');
+            } else {
+                backToTopButton.classList.add('d-none');
+            }
+        });
+
+        // Scroll to hero section when button is clicked
+        backToTopButton.addEventListener('click', function() {
+            if (heroSection) {
+                heroSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+
+        // Auto-scroll to hero section on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll to top of the page first
+            window.scrollTo(0, 0);
+            
+            // Then scroll to hero section smoothly
+            if (heroSection) {
+                heroSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
 </body>
 
 </html>

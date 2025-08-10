@@ -187,8 +187,8 @@
         
         <div class="container position-relative">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3 text-white">My Trading Accuracy</h2>
-                <p class="lead text-white-50">Consistent growth in trading performance</p>
+                <h2 class="display-5 fw-bold mb-3 text-white">My Net Profit</h2>
+                <p class="lead text-white-50">Consistent growth in trading profits</p>
             </div>
             
             <div class="row g-4">
@@ -208,38 +208,37 @@
                     <div class="h-100 d-flex flex-column">
                         <div class="card border-0 shadow-sm mb-4 flex-grow-1" style="background: rgba(255, 255, 255, 0.95);">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-dark mb-4">Performance Summary</h5>
+                                <h5 class="card-title text-dark mb-4">💰 Net Profit Performance</h5>
                                 
                                 <!-- Current Year -->
                                 <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
                                     <div>
-                                        <h6 class="mb-0 text-muted">Current Year</h6>
-                                        <p class="mb-0 small text-muted">2024 Accuracy</p>
+                                        <h6 class="mb-0 text-muted">📈 Current Year ROI</h6>
+                                        <p class="mb-0 small text-muted">2024 Net Profit Margin</p>
                                     </div>
-                                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">25%</span>
+                                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">25% ROI</span>
                                 </div>
                                 
                                 <!-- Average -->
                                 <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
                                     <div>
-                                        <h6 class="mb-0 text-muted">Average</h6>
-                                        <p class="mb-0 small text-muted">4-Year Average</p>
+                                        <h6 class="mb-0 text-muted">🏆 Consistent Returns</h6>
+                                        <p class="mb-0 small text-muted">4-Year Average Yield</p>
                                     </div>
-                                    <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">17.25%</span>
+                                    <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">17.25% APY</span>
                                 </div>
-                                
                                 <!-- Improvement -->
                                 <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
                                     <div>
-                                        <h6 class="mb-0 text-muted">Improvement</h6>
-                                        <p class="mb-0 small text-muted">Since 2021</p>
+                                        <h6 class="mb-0 text-muted">🚀 Portfolio Growth</h6>
+                                        <p class="mb-0 small text-muted">Cumulative Since 2021</p>
                                     </div>
-                                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">+13%</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">+13% Growth</span>
                                 </div>
                                 
                                 <!-- Yearly Breakdown -->
                                 <div class="mt-4">
-                                    <h6 class="text-muted mb-3">Yearly Breakdown</h6>
+                                    <h6 class="text-muted mb-3">📊 Annual Performance</h6>
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <span class="text-muted small">2024</span>
                                         <div class="d-flex align-items-center">
@@ -335,7 +334,7 @@
                         displayColors: false,
                         callbacks: {
                             label: function(context) {
-                                return `Accuracy: ${context.parsed.y}%`;
+                                return `Net Profit: ${context.parsed.y.toLocaleString()}%`;
                             }
                         }
                     }
@@ -643,142 +642,7 @@
         </div>
     </section>
 
-    <!-- Stock Analysis Websites -->
-    <section id="stock-analysis" class="py-5" style="background-color: #f8f9fa;">
-        
-
-            <div class="row g-4 justify-content-center">
-                <!-- NEPSE -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <a href="https://www.nepalstock.com" target="_blank" class="text-decoration-none analysis-item">
-                        <div class="card h-100 analysis-card border-0 shadow-sm overflow-hidden position-relative">
-                            <div class="card-body text-center p-4">
-                                <div class="analysis-icon-wrapper mb-3">
-                                    <div class="analysis-icon bg-primary bg-opacity-10 p-3 rounded-3">
-                                        <i class="bi bi-graph-up text-primary" style="font-size: 1.75rem;"></i>
-                                    </div>
-                                </div>
-                                <h6 class="mb-0 fw-bold">NEPSE</h6>
-                                <div class="analysis-hover-content">
-                                    <span class="badge bg-primary mt-3 px-3 py-2">Explore <i
-                                            class="bi bi-arrow-right ms-1"></i></span>
-                                </div>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-success bg-opacity-10 text-success small">Official</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- NEPSE Alpha -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <a href="https://nepsealpha.com" target="_blank" class="text-decoration-none analysis-item">
-                        <div class="card h-100 analysis-card border-0 shadow-sm overflow-hidden">
-                            <div class="card-body text-center p-4">
-                                <div class="analysis-icon-wrapper mb-3">
-                                    <div class="analysis-icon bg-info bg-opacity-10 p-3 rounded-3">
-                                        <i class="bi bi-bar-chart-line text-info" style="font-size: 1.75rem;"></i>
-                                    </div>
-                                </div>
-                                <h6 class="mb-0 fw-bold">NEPSE Alpha</h6>
-                                <div class="analysis-hover-content">
-                                    <span class="badge bg-info mt-3 px-3 py-2">Analyze <i
-                                            class="bi bi-arrow-right ms-1"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- ShareSansar -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <a href="https://www.sharesansar.com" target="_blank" class="text-decoration-none analysis-item">
-                        <div class="card h-100 analysis-card border-0 shadow-sm overflow-hidden position-relative">
-                            <div class="card-body text-center p-4">
-                                <div class="analysis-icon-wrapper mb-3">
-                                    <div class="analysis-icon bg-warning bg-opacity-10 p-3 rounded-3">
-                                        <i class="bi bi-pie-chart text-warning" style="font-size: 1.75rem;"></i>
-                                    </div>
-                                </div>
-                                <h6 class="mb-0 fw-bold">ShareSansar</h6>
-                                <div class="analysis-hover-content">
-                                    <span class="badge bg-warning mt-3 px-3 py-2">Research <i
-                                            class="bi bi-arrow-right ms-1"></i></span>
-                                </div>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-danger bg-opacity-10 text-danger small">Popular</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Chukul -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <a href="https://chukul.com" target="_blank" class="text-decoration-none analysis-item">
-                        <div class="card h-100 analysis-card border-0 shadow-sm overflow-hidden">
-                            <div class="card-body text-center p-4">
-                                <div class="analysis-icon-wrapper mb-3">
-                                    <div class="analysis-icon bg-success bg-opacity-10 p-3 rounded-3">
-                                        <i class="bi bi-lightning-charge text-success" style="font-size: 1.75rem;"></i>
-                                    </div>
-                                </div>
-                                <h6 class="mb-0 fw-bold">Chukul</h6>
-                                <div class="analysis-hover-content">
-                                    <span class="badge bg-success mt-3 px-3 py-2">Discover <i
-                                            class="bi bi-arrow-right ms-1"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Mero Lagani -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <a href="https://merolagani.com" target="_blank" class="text-decoration-none analysis-item">
-                        <div class="card h-100 analysis-card border-0 shadow-sm overflow-hidden position-relative">
-                            <div class="card-body text-center p-4">
-                                <div class="analysis-icon-wrapper mb-3">
-                                    <div class="analysis-icon bg-danger bg-opacity-10 p-3 rounded-3">
-                                        <i class="bi bi-coin text-danger" style="font-size: 1.75rem;"></i>
-                                    </div>
-                                </div>
-                                <h6 class="mb-0 fw-bold">Mero Lagani</h6>
-                                <div class="analysis-hover-content">
-                                    <span class="badge bg-danger mt-3 px-3 py-2">Invest <i
-                                            class="bi bi-arrow-right ms-1"></i></span>
-                                </div>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-primary bg-opacity-10 text-primary small">Featured</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Money Mitra -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <a href="https://moneymitra.com/guru-mantra/dashboard/" target="_blank" class="text-decoration-none analysis-item">
-                        <div class="card h-100 analysis-card border-0 shadow-sm overflow-hidden">
-                            <div class="card-body text-center p-4">
-                                <div class="analysis-icon-wrapper mb-3">
-                                    <div class="analysis-icon bg-purple bg-opacity-10 p-3 rounded-3">
-                                        <i class="bi bi-currency-rupee text-purple" style="font-size: 1.75rem;"></i>
-                                    </div>
-                                </div>
-                                <h6 class="mb-0 fw-bold">Guru Mantra</h6>
-                                <div class="analysis-hover-content">
-                                    <span class="badge bg-purple mt-3 px-3 py-2">Learn <i
-                                            class="bi bi-arrow-right ms-1"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <style>
+    <style>
             .analysis-card {
                 transition: all 0.3s ease;
                 border-radius: 12px;
@@ -843,1004 +707,454 @@
                 border-radius: 3px;
             }
         </style>
-    </section>
 
-    <!-- News Section -->
-    <section id="news" class="py-5" style="background-color: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" style="color: #ffc107 !important;"><i
-                    class="bi bi-newspaper me-2"></i>News Channels</h2>
+        <div class="position-absolute bottom-0 start-0" style="width: 400px; height: 400px; background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, rgba(255, 255, 255, 0) 70%); transform: translate(-30%, 30%);"></div>
+        
+        <div class="container position-relative">
+            <div class="text-center mb-6">
+                <span class="badge bg-warning bg-opacity-10 text-warning mb-3 px-4 py-2 rounded-pill fw-normal">
+                    <i class="bi bi-chat-square-quote-fill me-2"></i>Success Stories
+                </span>
+                <h2 class="display-5 fw-bold mb-3">What Our <span class="text-warning">Investors Say</span></h2>
+                <p class="lead text-muted">Join thousands of successful traders who have transformed their financial journey</p>
+            </div>
 
-            <!-- General News Section -->
-            <div class="news-section general-news mb-5"
-                style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
-                <div class="section-header text-center mb-4">
-                    <div class="d-inline-block position-relative">
-                        <h3 class="section-title mb-0" style="color: #ffc107 !important;">
-                            <i class="bi bi-newspaper me-2" style="color: #ffc107 !important;"></i>General News
-                        </h3>
-                        <div class="header-underline"></div>
-                    </div>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <!-- Online Khabar -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <a href="https://www.onlinekhabar.com" target="_blank" class="text-decoration-none news-item">
-                            <div class="card h-100 news-card border-0 shadow-sm overflow-hidden">
-                                <div class="card-body text-center p-3">
-                                    <div class="news-icon-wrapper mb-3">
-                                        <div class="news-icon bg-primary bg-opacity-10 p-3 rounded-circle">
-                                            <i class="bi bi-newspaper text-primary" style="font-size: 1.75rem;"></i>
-                                        </div>
-                                    </div>
-                                    <h6 class="mb-0 fw-bold text-dark">Online Khabar</h6>
-                                    <div class="news-hover-content">
-                                        <span class="badge bg-primary mt-2">Visit Site</span>
-                                    </div>
+            <!-- Testimonials Grid -->
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Sharma">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-
-                    <!-- Kantipur -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <a href="https://ekantipur.com" target="_blank" class="text-decoration-none news-item">
-                            <div class="card h-100 news-card border-0 shadow-sm overflow-hidden">
-                                <div class="card-body text-center p-3">
-                                    <div class="news-icon-wrapper mb-3">
-                                        <div class="news-icon bg-danger bg-opacity-10 p-3 rounded-circle">
-                                            <i class="bi bi-globe text-danger" style="font-size: 1.75rem;"></i>
-                                        </div>
-                                    </div>
-                                    <h6 class="mb-0 fw-bold text-dark">Kantipur</h6>
-                                    <div class="news-hover-content">
-                                        <span class="badge bg-danger mt-2">Visit Site</span>
-                                    </div>
-                                </div>
+                            <div class="testimonial-text">
+                                <p>"Yadav's fundamental analysis transformed my approach to stock picking. I've seen a 47% return on my portfolio in just 8 months!"</p>
                             </div>
-                        </a>
-                    </div>
-
-                    <!-- Annapurna Post -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <a href="https://annapurnapost.com" target="_blank"
-                            class="text-decoration-none news-item">
-                            <div class="card h-100 news-card border-0 shadow-sm overflow-hidden">
-                                <div class="card-body text-center p-3">
-                                    <div class="news-icon-wrapper mb-3">
-                                        <div class="news-icon bg-success bg-opacity-10 p-3 rounded-circle">
-                                            <i class="bi bi-mountain text-success" style="font-size: 1.75rem;"></i>
-                                        </div>
-                                    </div>
-                                    <h6 class="mb-0 fw-bold text-dark">Annapurna Post</h6>
-                                    <div class="news-hover-content">
-                                        <span class="badge bg-success mt-2">Visit Site</span>
-                                    </div>
-                                </div>
+                            <div class="testimonial-author">
+                                <h5>Rajesh Sharma</h5>
+                                <span>Portfolio Manager, NIBL Capital</span>
                             </div>
-                        </a>
-                    </div>
-
-                    <!-- Setopati -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <a href="https://setopati.com" target="_blank" class="text-decoration-none news-item">
-                            <div class="card h-100 news-card border-0 shadow-sm overflow-hidden">
-                                <div class="card-body text-center p-3">
-                                    <div class="news-icon-wrapper mb-3">
-                                        <div class="news-icon bg-info bg-opacity-10 p-3 rounded-circle">
-                                            <i class="bi bi-newspaper text-info" style="font-size: 1.75rem;"></i>
-                                        </div>
-                                    </div>
-                                    <h6 class="mb-0 fw-bold text-dark">Setopati</h6>
-                                    <div class="news-hover-content">
-                                        <span class="badge bg-info mt-2">Visit Site</span>
-                                    </div>
-                                </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
                             </div>
-                        </a>
-                    </div>
-
-
-
-                    <!-- Ujyaalo -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <a href="https://ujyaaloonline.com" target="_blank" class="text-decoration-none news-item">
-                            <div class="card h-100 news-card border-0 shadow-sm overflow-hidden">
-                                <div class="card-body text-center p-3">
-                                    <div class="news-icon-wrapper mb-3">
-                                        <div class="news-icon bg-primary bg-opacity-10 p-3 rounded-circle">
-                                            <i class="bi bi-brightness-high text-primary"
-                                                style="font-size: 1.75rem;"></i>
-                                        </div>
-                                    </div>
-                                    <h6 class="mb-0 fw-bold text-dark">Ujyaalo</h6>
-                                    <div class="news-hover-content">
-                                        <span class="badge bg-primary mt-2">Visit Site</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Nepal Khabar -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <a href="https://nepalkhabar.com" target="_blank" class="text-decoration-none news-item">
-                            <div class="card h-100 news-card border-0 shadow-sm overflow-hidden">
-                                <div class="card-body text-center p-3">
-                                    <div class="news-icon-wrapper mb-3">
-                                        <div class="news-icon bg-danger bg-opacity-10 p-3 rounded-circle">
-                                            <i class="bi bi-newspaper text-danger" style="font-size: 1.75rem;"></i>
-                                        </div>
-                                    </div>
-                                    <h6 class="mb-0 fw-bold text-dark">Nepal Khabar</h6>
-                                    <div class="news-hover-content">
-                                        <span class="badge bg-danger mt-2">Visit Site</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Stock News Section -->
-                <div class="stock-news-section mt-5 pt-5"
-                    style="background-color: #fff8e1; padding: 2rem; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.05); margin: 2rem -2rem; padding: 2rem;">
-                    <div class="section-header text-center mb-4">
-                        <div class="d-inline-block position-relative">
-                            <h3 class="section-title mb-0" style="color: #ffc107 !important;">
-                                <i class="bi bi-graph-up-arrow me-2" style="color: #ffc107 !important;"></i>Stock Market
-                                News
-                            </h3>
-                            <div class="header-underline bg-success"></div>
-                        </div>
-                        <p class="text-muted mt-2">Stay updated with the latest market trends and stock analysis</p>
-                    </div>
-                    <div class="row g-4 justify-content-center">
-                        <!-- Nepali Paisa -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://nepalipaisa.com" target="_blank" class="text-decoration-none stock-item">
-                                <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
-                                    <div class="card-body text-center p-4">
-                                        <div class="stock-icon-wrapper mb-3">
-                                            <div class="stock-icon bg-primary bg-opacity-10 p-3 rounded-3">
-                                                <i class="bi bi-currency-exchange text-primary"
-                                                    style="font-size: 1.75rem;"></i>
-                                            </div>
-                                        </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Nepali Paisa</h6>
-                                        <div class="stock-hover-content">
-                                            <span class="badge bg-primary mt-3 px-3 py-2">View Analysis <i
-                                                    class="bi bi-arrow-right ms-1"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="stock-ribbon">TRENDING</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Mero Lagani -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://arthasarokar.com/" target="_blank" class="text-decoration-none stock-item">
-                                <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
-                                    <div class="card-body text-center p-4">
-                                        <div class="stock-icon-wrapper mb-3">
-                                            <div class="stock-icon bg-success bg-opacity-10 p-3 rounded-3">
-                                                <i class="bi bi-graph-up-arrow text-success"
-                                                    style="font-size: 1.75rem;"></i>
-                                            </div>
-                                        </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Artha Sarokar</h6>
-                                        <div class="stock-hover-content">
-                                            <span class="badge bg-success mt-3 px-3 py-2">View Analysis <i
-                                                    class="bi bi-arrow-right ms-1"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="stock-ribbon">HOT</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Bajar Ko Chifar -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://bajarkochirfar.com" target="_blank" class="text-decoration-none stock-item">
-                                <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
-                                    <div class="card-body text-center p-4">
-                                        <div class="stock-icon-wrapper mb-3">
-                                            <div class="stock-icon bg-info bg-opacity-10 p-3 rounded-3">
-                                                <i class="bi bi-bar-chart-line text-info"
-                                                    style="font-size: 1.75rem;"></i>
-                                            </div>
-                                        </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Bajar Ko Chifar</h6>
-                                        <div class="stock-hover-content">
-                                            <span class="badge bg-info mt-3 px-3 py-2">View Analysis <i
-                                                    class="bi bi-arrow-right ms-1"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Biz Shala -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://www.bizshala.com" target="_blank" class="text-decoration-none stock-item">
-                                <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
-                                    <div class="card-body text-center p-4">
-                                        <div class="stock-icon-wrapper mb-3">
-                                            <div class="stock-icon bg-warning bg-opacity-10 p-3 rounded-3">
-                                                <i class="bi bi-briefcase text-warning" style="font-size: 1.75rem;"></i>
-                                            </div>
-                                        </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Biz Shala</h6>
-                                        <div class="stock-hover-content">
-                                            <span class="badge bg-warning text-dark mt-3 px-3 py-2">View Analysis <i
-                                                    class="bi bi-arrow-right ms-1"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="stock-ribbon">NEW</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Artha Sarokar -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://nepsetrading.com" target="_blank" class="text-decoration-none stock-item">
-                                <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
-                                    <div class="card-body text-center p-4">
-                                        <div class="stock-icon-wrapper mb-3">
-                                            <div class="stock-icon bg-danger bg-opacity-10 p-3 rounded-3">
-                                                <i class="bi bi-cash-coin text-danger" style="font-size: 1.75rem;"></i>
-                                            </div>
-                                        </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Nepse Trading</h6>
-                                        <div class="stock-hover-content">
-                                            <span class="badge bg-danger mt-3 px-3 py-2">View Analysis <i
-                                                    class="bi bi-arrow-right ms-1"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Share Sansar -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <a href="https://sharesansar.com" target="_blank" class="text-decoration-none stock-item">
-                                <div class="card h-100 stock-card border-0 overflow-hidden position-relative">
-                                    <div class="card-body text-center p-4">
-                                        <div class="stock-icon-wrapper mb-3">
-                                            <div class="stock-icon bg-primary bg-opacity-10 p-3 rounded-3">
-                                                <i class="bi bi-people-fill text-primary"
-                                                    style="font-size: 1.75rem;"></i>
-                                            </div>
-                                        </div>
-                                        <h6 class="mb-0 fw-bold text-dark">Share Sansar</h6>
-                                        <div class="stock-hover-content">
-                                            <span class="badge bg-primary mt-3 px-3 py-2">View Analysis <i
-                                                    class="bi bi-arrow-right ms-1"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="stock-ribbon">POPULAR</div>
-                                </div>
-                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Business News Section -->
-                <div class="business-news-section mt-5 pt-5"
-                    style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
-                    <div class="section-header text-center mb-5">
-                        <div class="d-inline-block position-relative">
-                            <h3 class="section-title mb-0" style="color: #ffc107 !important;">
-                                <i class="bi bi-briefcase me-2" style="color: #ffc107 !important;"></i>Business News
-                            </h3>
-                            <div class="header-underline bg-primary"></div>
+                <!-- Testimonial 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Koirala">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"The technical analysis strategies helped me identify breakout stocks with 85% accuracy. My trading account has grown by 320% this year!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Priya Koirala</h5>
+                                <span>Day Trader</span>
+                            </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
                         </div>
-                        <p class="text-muted mt-3">Latest updates from Nepal's top business news sources</p>
                     </div>
-                    <div class="row g-4 justify-content-center">
-                        <!-- Bizmandu -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <div class="business-card-wrapper">
-                                <a href="https://www.bizmandu.com" target="_blank"
-                                    class="text-decoration-none business-item">
-                                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                        <div class="business-icon-wrapper">
-                                            <i class="bi bi-building"></i>
-                                        </div>
-                                        <div class="card-body text-center p-4">
-                                            <h6 class="mb-0 fw-bold">Bizmandu</h6>
-                                            <div class="business-hover-content">
-                                                <span class="btn btn-sm btn-outline-primary rounded-pill mt-3">Explore
-                                                    <i class="bi bi-arrow-right ms-1"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="business-pattern"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                </div>
 
-                        <!-- Clickmandu -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <div class="business-card-wrapper">
-                                <a href="https://clickmandu.com" target="_blank"
-                                    class="text-decoration-none business-item">
-                                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                        <div class="business-icon-wrapper bg-success bg-opacity-10">
-                                            <i class="bi bi-mouse text-success"></i>
-                                        </div>
-                                        <div class="card-body text-center p-4">
-                                            <h6 class="mb-0 fw-bold">Clickmandu</h6>
-                                            <div class="business-hover-content">
-                                                <span class="btn btn-sm btn-outline-success rounded-pill mt-3">Explore
-                                                    <i class="bi bi-arrow-right ms-1"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="business-pattern"></div>
-                                    </div>
-                                </a>
+                <!-- Testimonial 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Amit Gurung">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Karobar -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <div class="business-card-wrapper">
-                                <a href="https://www.karobardaily.com" target="_blank"
-                                    class="text-decoration-none business-item">
-                                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                        <div class="business-icon-wrapper bg-info bg-opacity-10">
-                                            <i class="bi bi-briefcase text-info"></i>
-                                        </div>
-                                        <div class="card-body text-center p-4">
-                                            <h6 class="mb-0 fw-bold">Karobar</h6>
-                                            <div class="business-hover-content">
-                                                <span
-                                                    class="btn btn-sm btn-outline-info rounded-pill mt-3 text-info">Explore
-                                                    <i class="bi bi-arrow-right ms-1"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="business-pattern"></div>
-                                    </div>
-                                </a>
+                            <div class="testimonial-text">
+                                <p>"As a long-term investor, Yadav's value investing principles have helped me build a portfolio that consistently outperforms the NEPSE index by 18% annually."</p>
                             </div>
-                        </div>
-
-                        <!-- Arthik Abhiyan -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <div class="business-card-wrapper">
-                                <a href="https://arthikabhiyan.com" target="_blank"
-                                    class="text-decoration-none business-item">
-                                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                        <div class="business-icon-wrapper bg-warning bg-opacity-10">
-                                            <i class="bi bi-graph-up-arrow text-warning"></i>
-                                        </div>
-                                        <div class="card-body text-center p-4">
-                                            <h6 class="mb-0 fw-bold">Arthik Abhiyan</h6>
-                                            <div class="business-hover-content">
-                                                <span
-                                                    class="btn btn-sm btn-outline-warning rounded-pill mt-3 text-warning">Explore
-                                                    <i class="bi bi-arrow-right ms-1"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="business-pattern"></div>
-                                    </div>
-                                </a>
+                            <div class="testimonial-author">
+                                <h5>Amit Gurung</h5>
+                                <span>Value Investor</span>
                             </div>
-                        </div>
-
-                        <!-- Bikash News -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <div class="business-card-wrapper">
-                                <a href="https://bikashnews.com" target="_blank"
-                                    class="text-decoration-none business-item">
-                                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                        <div class="business-icon-wrapper bg-danger bg-opacity-10">
-                                            <i class="bi bi-currency-dollar text-danger"></i>
-                                        </div>
-                                        <div class="card-body text-center p-4">
-                                            <h6 class="mb-0 fw-bold">Bikash News</h6>
-                                            <div class="business-hover-content">
-                                                <span class="btn btn-sm btn-outline-danger rounded-pill mt-3">Explore <i
-                                                        class="bi bi-arrow-right ms-1"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="business-pattern"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Insurance Khabar -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <div class="business-card-wrapper">
-                                <a href="https://www.insurancekhabar.com" target="_blank"
-                                    class="text-decoration-none business-item">
-                                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                        <div class="business-icon-wrapper bg-primary bg-opacity-10">
-                                            <i class="bi bi-shield-check text-primary"></i>
-                                        </div>
-                                        <div class="card-body text-center p-4">
-                                            <h6 class="mb-0 fw-bold">Insurance Khabar</h6>
-                                            <div class="business-hover-content">
-                                                <span class="btn btn-sm btn-outline-primary rounded-pill mt-3">Explore
-                                                    <i class="bi bi-arrow-right ms-1"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="business-pattern"></div>
-                                    </div>
-                                </a>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <style>
-                /* Sector Background Styles */
-                .sector-general-news {
-                    background: linear-gradient(135deg, #f6f9fc 0%, #f1f7fd 100%);
-                    border-radius: 15px;
-                    padding: 2rem;
-                    margin: 1.5rem 0;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-                    border-left: 5px solid #4e73df;
-                }
-                
-                .sector-stock-news {
-                    background: linear-gradient(135deg, #fff8f8 0%, #fff0f0 100%);
-                    border-radius: 15px;
-                    padding: 2rem;
-                    margin: 1.5rem 0;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-                    border-left: 5px solid #e74a3b;
-                }
-                
-                .sector-business-news {
-                    background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
-                    border-radius: 15px;
-                    padding: 2rem;
-                    margin: 1.5rem 0;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-                    border-left: 5px solid #6f42c1;
-                }
-                
-                .sector-analysis {
-                    background: linear-gradient(135deg, #f0fdf4 0%, #e8fcf1 100%);
-                    border-radius: 15px;
-                    padding: 2rem;
-                    margin: 1.5rem 0;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-                    border-left: 5px solid #1cc88a;
-                }
-                
-                .sector-regulatory {
-                    background: linear-gradient(135deg, #fef9e7 0%, #fef5e7 100%);
-                    border-radius: 15px;
-                    padding: 2rem;
-                    margin: 1.5rem 0;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-                    border-left: 5px solid #f6c23e;
-                }
-                
-                /* Custom CSS */
-                /* Style for all h1 elements except in hero section */
-                h1:not(.home-section h1, .hero-banner h1, .hero-title, .hero-subtitle) {
-                    color: #ffc107 !important; /* Yellow text */
-                    background-color: #0d6efd; /* Blue background */
-                    display: inline-block;
-                    padding: 0.5rem 1rem;
-                    border-radius: 5px;
-                    margin: 0.5rem 0;
-                }
 
-                /* Ensure hero section h1 remains unchanged */
-                .home-section h1,
-                .hero-banner h1,
-                .hero-title,
-                .hero-subtitle {
-                    background-color: transparent !important;
-                    color: inherit !important;
-                    padding: 0 !important;
-                    margin: 0 0 1rem 0 !important;
-                    display: block;
-                }
+            <!-- Additional Testimonials Row -->
+            <div class="row g-4 mt-2">
+                <!-- Testimonial 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Sarina Karki">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"Yadav's technical analysis webinars transformed my trading approach. My blog's stock pick accuracy improved by 40% after implementing his methods."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Sarina Karki</h5>
+                                <span>Financial Blogger</span>
+                            </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                /* Base Styles */
-                .news-card,
-                .stock-card,
-                .business-card {
-                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    border-radius: 12px;
-                    overflow: hidden;
-                }
+                <!-- Testimonial 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="Bikash Thapa">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"The options strategies I learned helped me turn $5,000 into $12,000 in 3 months. The risk management techniques are game-changing!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Bikash Thapa</h5>
+                                <span>Options Trader</span>
+                            </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                /* Stock News Section */
-                .stock-news-section {
-                    position: relative;
-                    z-index: 1;
-                    padding: 2rem 0;
-                }
-
-                .stock-news-section .section-title {
-                    color: #2c3e50;
-                    font-weight: 700;
-                    position: relative;
-                    display: inline-block;
-                    margin-bottom: 1.5rem;
-                }
-
-                .stock-news-section .header-underline {
-                    height: 4px;
-                    width: 60px;
-                    background: linear-gradient(90deg, #4e73df, #224abe);
-                    margin: 0.5rem auto 0;
-                    border-radius: 2px;
-                }
-
-                .stock-card {
-                    background: white;
-                    border: 1px solid rgba(0, 0, 0, 0.04) !important;
-                    position: relative;
-                    overflow: visible;
-                    height: 100%;
-                }
-
-                .stock-card::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    height: 4px;
-                    background: linear-gradient(90deg, #4e73df, #224abe);
-                    opacity: 0;
-                    transition: all 0.3s ease;
-                }
-
-                .stock-card:hover {
-                    transform: translateY(-8px);
-                    box-shadow: 0 15px 30px rgba(67, 89, 113, 0.1) !important;
-                    border-color: transparent !important;
-                }
-
-                .stock-card:hover::before {
-                    opacity: 1;
-                }
-
-                .stock-icon-wrapper {
-                    margin: 1.5rem 0;
-                    transition: all 0.3s ease;
-                    position: relative;
-                    z-index: 1;
-                }
-
-                .stock-icon {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 20px;
-                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    position: relative;
-                    z-index: 1;
-                }
-
-                .stock-icon::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    border-radius: 20px;
-                    opacity: 0.1;
-                    z-index: -1;
-                    transition: all 0.3s ease;
-                }
-
-                .stock-card:hover .stock-icon {
-                    transform: translateY(-5px) scale(1.1);
-                }
-
-                .stock-card:hover .stock-icon::after {
-                    transform: scale(1.2);
-                    opacity: 0.2;
-                }
-
-                .stock-hover-content {
-                    height: 0;
-                    opacity: 0;
-                    overflow: hidden;
-                    transition: all 0.4s ease;
-                }
-
-                .stock-card:hover .stock-hover-content {
-                    height: auto;
-                    opacity: 1;
-                    margin-top: 1rem;
-                }
-
-                .stock-ribbon {
-                    position: absolute;
-                    top: 15px;
-                    right: -30px;
-                    background: #4e73df;
-                    color: white;
-                    padding: 5px 35px;
-                    font-size: 11px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    transform: rotate(45deg);
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                    z-index: 1;
-                    letter-spacing: 1px;
-                }
-
-                /* Responsive adjustments */
-                @media (max-width: 768px) {
-                    .stock-card {
-                        margin-bottom: 1.5rem;
-                    }
-
-                    .stock-icon-wrapper {
-                        margin: 1rem 0;
-                    }
-                }
-
-                /* Animation for stock cards */
-                @keyframes fadeInUp {
-                    from {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-
-                .stock-news-section .col-6 {
-                    animation: fadeInUp 0.6s ease-out forwards;
-                    opacity: 0;
-                }
-
-                /* Delay animations for each card */
-                .stock-news-section .col-6:nth-child(1) {
-                    animation-delay: 0.1s;
-                }
-
-                .stock-news-section .col-6:nth-child(2) {
-                    animation-delay: 0.2s;
-                }
-
-                .stock-news-section .col-6:nth-child(3) {
-                    animation-delay: 0.3s;
-                }
-
-                .stock-news-section .col-6:nth-child(4) {
-                    animation-delay: 0.4s;
-                }
-
-                .stock-news-section .col-6:nth-child(5) {
-                    animation-delay: 0.5s;
-                }
-
-                .stock-news-section .col-6:nth-child(6) {
-                    animation-delay: 0.6s;
-                }
-
-                /* Business News Section */
-                .business-news-section {
-                    position: relative;
-                    z-index: 1;
-                    background: #f8f9fa;
-                    border-radius: 16px;
-                    padding: 2rem;
-                    margin-top: 3rem;
-                    overflow: hidden;
-                }
-
-                .business-news-section::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    height: 5px;
-                    background: linear-gradient(90deg, #4e73df, #224abe);
-                    opacity: 0.8;
-                }
-
-                .business-news-section .section-title {
-                    color: #2c3e50;
-                    font-weight: 700;
-                    position: relative;
-                    display: inline-block;
-                    margin-bottom: 1.5rem;
-                }
-
-                .business-news-section .header-underline {
-                    height: 4px;
-                    width: 60px;
-                    background: linear-gradient(90deg, #4e73df, #224abe);
-                    margin: 0.5rem auto 0;
-                    border-radius: 2px;
-                }
-
-                .business-card-wrapper {
-                    position: relative;
-                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    height: 100%;
-                }
-
-                .business-card-wrapper .card {
-                    border-radius: 12px !important;
-                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    border: 1px solid rgba(0, 0, 0, 0.04) !important;
-                    height: 100%;
-                    position: relative;
-                    background: white;
-                    overflow: hidden;
-                }
-
-                .business-card-wrapper:hover {
-                    transform: translateY(-8px);
-                }
-
-                .business-card-wrapper .card:hover {
-                    box-shadow: 0 15px 30px rgba(67, 89, 113, 0.15) !important;
-                    border-color: transparent !important;
-                }
-
-                .business-icon-wrapper {
-                    height: 100px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 2.5rem;
-                    color: #4e73df;
-                    position: relative;
-                    overflow: hidden;
-                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-                }
-
-                .business-icon-wrapper i {
-                    position: relative;
-                    z-index: 2;
-                    transition: all 0.3s ease;
-                }
-
-                .business-card-wrapper:hover .business-icon-wrapper i {
-                    transform: scale(1.1);
-                }
-
-                .business-pattern {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234e73df' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-                    opacity: 0.8;
-                    transition: all 0.3s ease;
-                }
-
-                .business-card-wrapper:hover .business-pattern {
-                    transform: scale(1.1);
-                    opacity: 1;
-                }
-
-                /* Regulatory Section Styles */
-                .regulatory-card-wrapper {
-                    transition: all 0.3s ease;
-                    height: 100%;
-                }
-
-                .regulatory-card-wrapper:hover {
-                    transform: translateY(-5px);
-                }
-
-                .regulatory-icon-wrapper {
-                    width: 60px;
-                    height: 60px;
-                    margin: 0 auto;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 1.5rem;
-                    margin-bottom: 1rem;
-                    transition: all 0.3s ease;
-                }
-
-                .regulatory-card-wrapper:hover .regulatory-icon-wrapper {
-                    transform: scale(1.1);
-                }
-
-                .regulatory-section .card {
-                    border-radius: 10px;
-                    transition: all 0.3s ease;
-                    border: 1px solid rgba(0, 0, 0, 0.05);
-                }
-
-                .regulatory-section .card:hover {
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
-                    transform: translateY(-5px);
-                }
-
-                .business-hover-content {
-                    height: 0;
-                    opacity: 0;
-                    overflow: hidden;
-                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-                }
-
-                .business-card-wrapper:hover .business-hover-content {
-                    height: auto;
-                    opacity: 1;
-                    margin-top: 1rem;
-                }
-
-                /* Business News animations */
-                .business-news-section .col-6 {
-                    animation: fadeInUp 0.6s ease-out forwards;
-                    opacity: 0;
-                }
-
-                .business-news-section .col-6:nth-child(1) {
-                    animation-delay: 0.2s;
-                }
-
-                .business-news-section .col-6:nth-child(2) {
-                    animation-delay: 0.3s;
-                }
-
-                .business-news-section .col-6:nth-child(3) {
-                    animation-delay: 0.4s;
-                }
-
-                .business-news-section .col-6:nth-child(4) {
-                    animation-delay: 0.5s;
-                }
-
-                .business-news-section .col-6:nth-child(5) {
-                    animation-delay: 0.6s;
-                }
-
-                .business-news-section .col-6:nth-child(6) {
-                    animation-delay: 0.7s;
-                }
-
-                @media (max-width: 768px) {
-                    .business-news-section {
-                        padding: 1.5rem;
-                    }
-
-                    .business-icon-wrapper {
-                        height: 80px;
-                        font-size: 2rem;
-                    }
-                }
-            </style>
-    </section>
-
-    <!-- Regulatory Bodies Section -->
-    <section id="regulatory" class="py-5" style="background-color: #f0f8ff;">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title mb-3" style="color: #ffc107 !important;">
-                    <i class="bi bi-building-gear me-2"></i>Regulatory Bodies
-                </h2>
-                <p class="text-muted">Key financial regulators and institutions in Nepal</p>
-                <div class="header-underline mx-auto"></div>
+                <!-- Testimonial 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="Nisha Rai">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"Yadav's market sentiment analysis is unmatched. Our portfolio performance improved by 18% after incorporating his strategies."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Nisha Rai</h5>
+                                <span>Fund Manager</span>
+                            </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="row g-4 justify-content-center">
-                <!-- NRB -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <div class="regulatory-card-wrapper">
-                        <a href="https://www.nrb.org.np" target="_blank" class="text-decoration-none">
-                            <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                <div class="regulatory-icon-wrapper bg-primary bg-opacity-10">
-                                    <i class="bi bi-bank text-primary"></i>
-                                </div>
-                                <div class="card-body text-center p-4">
-                                    <h6 class="mb-0 fw-bold">Nepal Rastra Bank</h6>
-                                    <p class="small text-muted mb-0">Central Bank of Nepal</p>
+            <!-- Third Row of Testimonials -->
+            <div class="row g-4 mt-2">
+                <!-- Testimonial 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rahul Kapoor">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
                                 </div>
                             </div>
-                        </a>
+                            <div class="testimonial-text">
+                                <p>"Yadav's market insights are incredibly accurate. His technical analysis helped me identify the perfect entry and exit points, boosting my trading success rate by 65%."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Rahul Kapoor</h5>
+                                <span>Equity Analyst</span>
+                            </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- SEBON -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <div class="regulatory-card-wrapper">
-                        <a href="https://www.sebon.gov.np" target="_blank" class="text-decoration-none">
-                            <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                <div class="regulatory-icon-wrapper bg-success bg-opacity-10">
-                                    <i class="bi bi-graph-up-arrow text-success"></i>
-                                </div>
-                                <div class="card-body text-center p-4">
-                                    <h6 class="mb-0 fw-bold">SEBON</h6>
-                                    <p class="small text-muted mb-0">Securities Board of Nepal</p>
+                <!-- Testimonial 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Meera Desai">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </div>
                             </div>
-                        </a>
+                            <div class="testimonial-text">
+                                <p>"As a beginner, Yadav's mentorship was invaluable. His clear explanations and practical strategies helped me grow my initial investment by 180% in my first year of trading."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Meera Desai</h5>
+                                <span>Retail Investor</span>
+                            </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- CDSC -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <div class="regulatory-card-wrapper">
-                        <a href="https://www.cdsc.com.np" target="_blank" class="text-decoration-none">
-                            <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                <div class="regulatory-icon-wrapper bg-info bg-opacity-10">
-                                    <i class="bi bi-share text-info"></i>
-                                </div>
-                                <div class="card-body text-center p-4">
-                                    <h6 class="mb-0 fw-bold">CDSC</h6>
-                                    <p class="small text-muted mb-0">Central Depository System</p>
+                <!-- Testimonial 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="Arjun Thapa">
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
                                 </div>
                             </div>
-                        </a>
+                            <div class="testimonial-text">
+                                <p>"The risk management techniques I learned from Yadav have been game-changing. My portfolio is now more resilient to market volatility while maintaining strong returns."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Arjun Thapa</h5>
+                                <span>Hedge Fund Manager</span>
+                            </div>
+                            <div class="testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Insurance Board -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <div class="regulatory-card-wrapper">
-                        <a href="https://www.ib.org.np" target="_blank" class="text-decoration-none">
-                            <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                <div class="regulatory-icon-wrapper bg-warning bg-opacity-10">
-                                    <i class="bi bi-shield-check text-warning"></i>
-                                </div>
-                                <div class="card-body text-center p-4">
-                                    <h6 class="mb-0 fw-bold">Insurance Board</h6>
-                                    <p class="small text-muted mb-0">Beema Samiti</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Ministry of Finance -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <div class="regulatory-card-wrapper">
-                        <a href="https://mof.gov.np" target="_blank" class="text-decoration-none">
-                            <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                <div class="regulatory-icon-wrapper bg-danger bg-opacity-10">
-                                    <i class="bi bi-building text-danger"></i>
-                                </div>
-                                <div class="card-body text-center p-4">
-                                    <h6 class="mb-0 fw-bold">Ministry of Finance</h6>
-                                    <p class="small text-muted mb-0">Government of Nepal</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- NEPSE -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <div class="regulatory-card-wrapper">
-                        <a href="https://www.nepalstock.com" target="_blank" class="text-decoration-none">
-                            <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                                <div class="regulatory-icon-wrapper bg-secondary bg-opacity-10">
-                                    <i class="bi bi-graph-up text-secondary"></i>
-                                </div>
-                                <div class="card-body text-center p-4">
-                                    <h6 class="mb-0 fw-bold">NEPSE</h6>
-                                    <p class="small text-muted mb-0">Nepal Stock Exchange</p>
-                                </div>
-                            </div>
-                        </a>
+            <!-- CTA Section -->
+            <div class="text-center mt-6 pt-4">
+                <div class="cta-card p-5 rounded-4" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);">
+                    <h3 class="text-white mb-4">Ready to Transform Your Trading Journey?</h3>
+                    <p class="lead text-white-50 mb-4">Join thousands of successful traders who trust Yadav's proven strategies</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#contact" class="btn btn-warning btn-lg px-4">Get Started</a>
+                        <a href="#portfolio" class="btn btn-outline-light btn-lg px-4">View Results</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <style>
+            /* Testimonial Cards */
+            .testimonial-card {
+                background: white;
+                border-radius: 1rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                transition: all 0.3s ease;
+                overflow: hidden;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+            }
+
+            .testimonial-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+                z-index: 2;
+            }
+
+            .testimonial-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+
+            .testimonial-content {
+                padding: 2rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .testimonial-avatar {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .testimonial-avatar img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 4px solid #fff;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                margin-bottom: 1rem;
+                object-fit: cover;
+            }
+
+            .testimonial-rating {
+                color: #ffc107;
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+            }
+
+            .testimonial-text {
+                flex-grow: 1;
+                margin-bottom: 1.5rem;
+                color: #4a5568;
+                font-style: italic;
+                line-height: 1.7;
+                position: relative;
+                padding: 0 1rem;
+            }
+
+            .testimonial-text::before,
+            .testimonial-text::after {
+                content: '"';
+                font-family: Georgia, serif;
+                font-size: 4rem;
+                color: #e2e8f0;
+                position: absolute;
+                line-height: 1;
+            }
+
+            .testimonial-text::before {
+                top: -1rem;
+                left: -0.5rem;
+            }
+
+            .testimonial-text::after {
+                bottom: -2rem;
+                right: -0.5rem;
+            }
+
+            .testimonial-author {
+                text-align: center;
+                margin-top: auto;
+            }
+
+            .testimonial-author h5 {
+                margin-bottom: 0.25rem;
+                color: #1a202c;
+                font-weight: 600;
+            }
+
+            .testimonial-author span {
+                color: #718096;
+                font-size: 0.9rem;
+            }
+
+            .testimonial-quote {
+                position: absolute;
+                bottom: 1rem;
+                right: 1.5rem;
+                color: #e2e8f0;
+                font-size: 4rem;
+                line-height: 1;
+                z-index: -1;
+            }
+
+            /* CTA Card */
+            .cta-card {
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(13, 110, 253, 0.2);
+            }
+
+            .cta-card::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+                transform: rotate(30deg);
+                pointer-events: none;
+            }
+
+            /* Responsive Adjustments */
+            @media (max-width: 991.98px) {
+                .testimonial-text {
+                    font-size: 0.95rem;
+                }
+                
+                .testimonial-card {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            @media (max-width: 767.98px) {
+                .testimonial-text {
+                    font-size: 1rem;
+                }
+                
+                .cta-card {
+                    padding: 2rem !important;
+                }
+                
+                .cta-card .btn {
+                    width: 100%;
+                    margin-bottom: 0.75rem;
+                }
+                
+                .cta-card .d-flex {
+                    flex-direction: column;
+                }
+            }
+        </style>
     </section>
 
     <!-- YouTube Video Slider -->
@@ -2417,15 +1731,12 @@
         </div>
     </section>
 
+    <!-- Remove the duplicate testimonials section here -->
+
     <!-- Brokers in Nepal Section -->
     <section id="brokers" class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title mb-3" style="color: #ffc107 !important;">
-                    <i class="bi bi-building me-2"></i>NEPSE Licensed Brokers
-                </h2>
-                <p class="text-muted">Complete directory of SEBON/NEPSE authorized stock brokers in Nepal</p>
-            </div>
+            
 
             <!-- Search, Filter and Sort -->
             <div class="row mb-4 g-3 align-items-end">
@@ -2635,22 +1946,78 @@
                 </div>
 
                 <!-- Additional Testimonials -->
-                <div class="col-md-6">
-                    <div
-                        class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card bg-primary text-white">
+                <!-- Professional Investor Testimonial -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%); color: #fff;">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/42.jpg"
+                                    class="rounded-circle me-3 border border-3 border-warning" width="60" height="60"
+                                    alt="Rajesh Koirala">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Rajesh Koirala</h6>
+                                    <small class="text-warning">Portfolio Manager, NIBL Ace Capital</small>
+                                    <div class="mt-1">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"Yadav's market analysis has been instrumental in shaping our investment strategies. His deep understanding of NEPSE's technical indicators has helped us consistently outperform the market by 18% annually."</p>
+                            <div class="text-warning small">
+                                <i class="bi bi-quote me-2"></i>3 months ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day Trader Testimonial -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: #fff;">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center mb-3">
                                 <img src="https://randomuser.me/api/portraits/women/63.jpg"
-                                    class="rounded-circle me-3 border border-3 border-white" width="60" height="60"
+                                    class="rounded-circle me-3 border border-3 border-warning" width="60" height="60"
                                     alt="Priya Sharma">
                                 <div>
                                     <h6 class="mb-0 fw-bold">Priya Sharma</h6>
-                                    <small>Day Trader</small>
+                                    <small class="text-warning">Full-time Day Trader</small>
                                     <div class="mt-1">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"The technical analysis strategies I've learned from Yadav have completely transformed my trading. My win rate improved from 45% to 78% within just 3 months of following his guidance."</p>
+                            <div class="text-warning small">
+                                <i class="bi bi-quote me-2"></i>2 weeks ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long-term Investor Testimonial -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #198754 0%, #0d6e3f 100%); color: #fff;">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/65.jpg"
+                                    class="rounded-circle me-3 border border-3 border-warning" width="60" height="60"
+                                    alt="Amit Gurung">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Amit Gurung</h6>
+                                    <small class="text-warning">Retired Banker & Investor</small>
+                                    <div class="mt-1">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
                                         <i class="bi bi-star-fill"></i>
                                     </div>
                                 </div>

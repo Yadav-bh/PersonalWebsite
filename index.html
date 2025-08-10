@@ -191,54 +191,128 @@
                 <p class="lead text-white-50">💰 Consistent growth in investment returns</p>
             </div>
             
-            <div class="row g-4">
-                <!-- Main Chart -->
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg overflow-hidden h-100" style="background: rgba(255, 255, 255, 0.95);">
-                        <div class="card-body p-4">
-                            <div style="position: relative; height: 300px;">
-                                <canvas id="accuracyChart"></canvas>
-                            </div>
-                        </div>
+            <!-- Main Chart - Full Width -->
+            <div class="card border-0 shadow-lg mb-4" style="background: rgba(255, 255, 255, 0.95);">
+                <div class="card-body p-4">
+                    <div style="position: relative; height: 300px;">
+                        <canvas id="accuracyChart"></canvas>
                     </div>
                 </div>
-                
-                <!-- Key Metrics -->
-                <div class="col-lg-4">
-                    <div class="h-100 d-flex flex-column">
-                        <div class="card border-0 shadow-sm mb-4 flex-grow-1" style="background: rgba(255, 255, 255, 0.95);">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-dark mb-4">💰 Net Profit Performance</h5>
+            </div>
+            
+            <!-- Metrics Grid -->
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm" style="background: rgba(255, 255, 255, 0.95);">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark mb-4">💰 Investment Return Metrics</h5>
+                            <div class="row g-4">
                                 
-                                <!-- Current Year -->
-                                <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
-                                    <div>
-                                        <h6 class="mb-0 text-muted">📈 Current Year ROI</h6>
-                                        <p class="mb-0 small text-muted">2024 Net Profit Margin</p>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Year-to-Date Return: The profit or loss generated from the beginning of the current year until now, expressed as a percentage of the initial investment.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">📈 YTD Return</h6>
+                                            <p class="mb-0 small text-muted">2024 Year-to-Date Return</p>
+                                        </div>
+                                        <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">25.0%</span>
                                     </div>
-                                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">25% ROI</span>
                                 </div>
                                 
-                                <!-- Average -->
-                                <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
-                                    <div>
-                                        <h6 class="mb-0 text-muted">🏆 Consistent Returns</h6>
-                                        <p class="mb-0 small text-muted">4-Year Average Yield</p>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Beta: Measures how much an investment's returns move relative to the overall market. A beta of 1 means it moves with the market, less than 1 is less volatile, and more than 1 is more volatile.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">📊 Beta</h6>
+                                            <p class="mb-0 small text-muted">Market Correlation Risk</p>
+                                        </div>
+                                        <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">0.85</span>
                                     </div>
-                                    <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">17.25% APY</span>
-                                </div>
-                                <!-- Improvement -->
-                                <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
-                                    <div>
-                                        <h6 class="mb-0 text-muted">🚀 Portfolio Growth</h6>
-                                        <p class="mb-0 small text-muted">Cumulative Since 2021</p>
-                                    </div>
-                                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">+13% Growth</span>
                                 </div>
                                 
-                                <!-- Yearly Breakdown -->
-                                <div class="mt-4">
-                                    <h6 class="text-muted mb-3">📊 Annual Performance</h6>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Alpha: Measures performance on a risk-adjusted basis. A positive alpha indicates the investment has performed better than its beta would predict, while a negative alpha indicates underperformance.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">🎯 Alpha</h6>
+                                            <p class="mb-0 small text-muted">Excess Return vs. Market</p>
+                                        </div>
+                                        <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">+6.2%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Sharpe Ratio: Measures risk-adjusted return. A higher Sharpe ratio indicates better risk-adjusted performance. A ratio of 1.0 or higher is considered good, 2.0 or higher is very good, and 3.0 or higher is excellent.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">⚖️ Risk-Adjusted Return</h6>
+                                            <p class="mb-0 small text-muted">Sharpe Ratio (3Y)</p>
+                                        </div>
+                                        <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">1.42</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Compound Annual Growth Rate (CAGR): The mean annual growth rate of an investment over a specified time period longer than one year. It represents one of the most accurate ways to calculate and determine returns for anything that can rise or fall in value over time.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">📊 CAGR</h6>
+                                            <p class="mb-0 small text-muted">Compound Annual Growth Rate (4Y)</p>
+                                        </div>
+                                        <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-2">17.25%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Volatility (Standard Deviation): Measures how much an investment's returns can vary from its average return. Higher standard deviation means higher risk as returns fluctuate more widely.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">📏 Volatility</h6>
+                                            <p class="mb-0 small text-muted">Annualized Standard Deviation</p>
+                                        </div>
+                                        <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">14.8%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortino Ratio: Similar to the Sharpe ratio but focuses only on the downside risk. It measures the risk-adjusted return of an investment asset, portfolio, or strategy. A higher Sortino ratio indicates better risk-adjusted returns.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">📉 Sortino Ratio</h6>
+                                            <p class="mb-0 small text-muted">Downside Risk-Adjusted Return</p>
+                                        </div>
+                                        <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">1.78</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Information Ratio: Measures a portfolio's returns above the returns of a benchmark, relative to the volatility of those returns. It evaluates the consistency of a portfolio manager in generating excess returns relative to a benchmark. A higher ratio indicates better performance.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">ℹ️ Info Ratio</h6>
+                                            <p class="mb-0 small text-muted">Excess Return per Unit of Risk</p>
+                                        </div>
+                                        <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">0.92</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Win Rate: The percentage of all trades that result in a profit. While important, it should be considered alongside the risk-reward ratio, as a high win rate with small profits and large losses can still be unprofitable.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">✅ Win Rate</h6>
+                                            <p class="mb-0 small text-muted">Percentage of Profitable Trades</p>
+                                        </div>
+                                        <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">68%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-3 h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Profit Factor: The ratio of gross profits to gross losses. A profit factor above 1.5 is generally good, above 2.0 is very good, and above 2.5 is excellent. It helps assess the risk-reward efficiency of a trading strategy.">
+                                        <div>
+                                            <h6 class="mb-1 text-muted">💰 Profit Factor</h6>
+                                            <p class="mb-0 small text-muted">Gross Profit / Gross Loss</p>
+                                        </div>
+                                        <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">2.15</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Yearly Breakdown -->
+                            <div class="mt-4">
+                                <h6 class="text-muted mb-3">📊 Annual Returns</h6>
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <span class="text-muted small">2024</span>
                                         <div class="d-flex align-items-center">
@@ -2439,6 +2513,19 @@
 
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Initialize tooltips -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl, {
+                trigger: 'hover',
+                html: true
+            });
+        });
+    });
+    </script>
     <!-- Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>

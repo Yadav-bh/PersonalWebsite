@@ -187,8 +187,8 @@
         
         <div class="container position-relative">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3 text-white">My Net Profit</h2>
-                <p class="lead text-white-50">Consistent growth in trading profits</p>
+                <h2 class="display-5 fw-bold mb-3 text-white">My Net Return</h2>
+                <p class="lead text-white-50">💰 Consistent growth in investment returns</p>
             </div>
             
             <div class="row g-4">
@@ -303,7 +303,7 @@
             data: {
                 labels: years,
                 datasets: [{
-                    label: 'Trading Accuracy %',
+                    label: 'Investment Return %',
                     data: accuracyData,
                     borderColor: '#0d6efd',
                     backgroundColor: gradient,
@@ -334,7 +334,7 @@
                         displayColors: false,
                         callbacks: {
                             label: function(context) {
-                                return `Net Profit: ${context.parsed.y.toLocaleString()}%`;
+                                return `Net Return: ${context.parsed.y.toLocaleString()}%`;
                             }
                         }
                     }

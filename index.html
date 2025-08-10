@@ -176,29 +176,206 @@
     </section>
 
     <!-- About Me -->
-    <section id="about" class="py-5 about-section">
-        <div class="container">
+    <section id="about" class="py-5 about-section position-relative overflow-hidden">
+        <div class="container position-relative">
             <div class="row align-items-center">
-                <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="yadav.jpg.jpg" alt="Profile Photo" class="rounded-circle profile-img shadow">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="position-relative">
+                        <div class="about-image-wrapper">
+                            <img src="yadav.jpg.jpg" alt="Yadav Bhandari" class="img-fluid rounded-4 shadow-lg">
+                            <div class="experience-badge" style="top: 20px; right: 20px; left: auto; bottom: auto; transform: translateY(0);">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2">
+                                        <i class="bi bi-award-fill text-warning"></i>
+                                    </div>
+                                    <div>
+                                        <div class="h5 mb-0">5+</div>
+                                        <small class="text-muted">Years Exp</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="mb-2"><span class="about-highlight">With over 5 years of hands-on experience in the stock
-                            market sector in Nepal, I specialize in technical analysis, fundamental research, and
-                            strategic investment planning. My expertise lies in identifying high-potential stocks and
-                            market trends to help investors make profitable decisions.
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h6 class="text-warning mb-3 text-uppercase fw-bold">About Me</h6>
+                        <h2 class="display-5 fw-bold mb-4" style="color: #2c3e50;">Transforming Market Analysis into <span class="text-warning">Investment Success</span></h2>
+                        <p class="lead mb-4">With over 5 years of expertise in Nepal's stock market, I specialize in uncovering high-potential investment opportunities through meticulous technical and fundamental analysis.</p>
+                        
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3">
+                                            <i class="bi bi-graph-up-arrow fs-4"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6 mb-1">Technical Analysis</h5>
+                                        <p class="small text-muted mb-0">Expert in chart patterns and indicators</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-3 p-3">
+                                            <i class="bi bi-calculator fs-4"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6 mb-1">Fundamental Research</h5>
+                                        <p class="small text-muted mb-0">In-depth company analysis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            My mission is to empower individuals with the knowledge and tools they need to navigate the
-                            stock market confidently and achieve their financial goals.</span></p>
-                    <ul class="list-inline mb-2">
-                        <li class="list-inline-item"><span class="badge bg-primary">NEPSE Analysis</span></li>
-                        <li class="list-inline-item"><span class="badge bg-success">Technical Analysis</span></li>
-                        <li class="list-inline-item"><span class="badge bg-info text-dark">Fundamental Analysis</span>
-                        </li>
-                    </ul>
-                    <p class="mb-0"><span class="about-values"><strong>Values:</strong> Integrity, Curiosity, Growth,
-                            Collaboration</span></p>
+                        <div class="skills-progress mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="small fw-medium">Technical Analysis</span>
+                                <span class="small fw-bold">95%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between mb-2 mt-3">
+                                <span class="small fw-medium">Fundamental Analysis</span>
+                                <span class="small fw-bold">90%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between mb-2 mt-3">
+                                <span class="small fw-medium">Risk Management</span>
+                                <span class="small fw-bold">92%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#contact" class="btn btn-warning btn-lg px-4">Get In Touch</a>
+                            <a href="#" class="btn btn-outline-light btn-lg px-4 text-white">Download CV <i class="bi bi-download ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-shape-1"></div>
+        <div class="about-shape-2"></div>
+    </section>
+    
+    <style>
+        .about-section {
+            background-color: #1e3a8a;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            color: #ffffff;
+        }
+        
+        .about-image-wrapper {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border: 10px solid #fff;
+            transition: transform 0.3s ease;
+        }
+        
+        .about-image-wrapper:hover {
+            transform: translateY(-5px);
+        }
+        
+        .experience-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .experience-badge i {
+            font-size: 2rem;
+        }
+        
+        .icon-box {
+            transition: all 0.3s ease;
+        }
+        
+        .icon-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .about-shape-1 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 193, 7, 0.1);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+            z-index: -1;
+        }
+        
+        .about-shape-2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(13, 110, 253, 0.1);
+            border-radius: 50%;
+            bottom: -100px;
+            left: -100px;
+            z-index: -1;
+        }
+        
+        .progress {
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #e9ecef;
+        }
+        
+        .progress-bar {
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 991.98px) {
+            .about-image-wrapper {
+                max-width: 400px;
+                margin-bottom: 2rem;
+            }
+            
+            .about-shape-1,
+            .about-shape-2 {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- My Achievement -->
+    <section id="achievement" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" style="color: #ffc107 !important;">My Achievement</h2>
+            <div class="text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                    <span class="badge bg-warning text-dark p-3">My Project</span>
+                    <span class="badge bg-success p-3">Technical Analyst</span>
+                    <span class="badge bg-info text-dark p-3">Investment Strategist</span>
+                    <span class="badge bg-warning text-dark p-3">Portfolio Manager</span>
+                    <span class="badge bg-danger p-3">Market Analyst</span>
                 </div>
             </div>
         </div>
@@ -1567,25 +1744,6 @@
         </style>
     </section>
 
-    <!-- My Achievement -->
-    <section id="achievement" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" style="color: #ffc107 !important;">My Achievement</h2>
-            <div class="text-center">
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                    <span class="badge bg-warning text-dark p-3">My Project</span>
-                    <a href="#" onclick="openPdf('download%20(1).pdf'); return false;" class="text-decoration-none">
-                        <span class="badge bg-primary p-3">Certificate</span>
-                    </a>
-                    <span class="badge bg-success p-3">Technical Analyst</span>
-                    <span class="badge bg-info text-dark p-3">Investment Strategist</span>
-                    <span class="badge bg-warning text-dark p-3">Portfolio Manager</span>
-                    <span class="badge bg-danger p-3">Market Analyst</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Sector Analysis -->
     <section id="sector-analysis" class="py-5">
         <div class="container">
@@ -2037,87 +2195,6 @@
                     <label class="form-label small text-muted mb-1">Location</label>
                     <select id="locationFilter" class="form-select shadow-sm">
                         <option value="">All Locations</option>
-                        <option value="Kathmandu">Kathmandu</option>
-                        <option value="Pokhara">Pokhara</option>
-                        <option value="Biratnagar">Biratnagar</option>
-                        <option value="Bharatpur">Bharatpur</option>
-                        <option value="Butwal">Butwal</option>
-                        <option value="Dharan">Dharan</option>
-                        <option value="Bhairahawa">Bhairahawa</option>
-                        <option value="Nepalgunj">Nepalgunj</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label small text-muted mb-1">Sort By</label>
-                    <select id="sortBy" class="form-select shadow-sm">
-                        <option value="name_asc">Name (A-Z)</option>
-                        <option value="name_desc">Name (Z-A)</option>
-                        <option value="rating_desc">Rating (High-Low)</option>
-                        <option value="branches_desc">Branches (Most)</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <button id="compareBtn" class="btn btn-outline-primary w-100 shadow-sm" disabled>
-                        <i class="bi bi-shuffle me-1"></i> Compare (<span id="compareCount">0</span>)
-                    </button>
-                </div>
-            </div>
-
-            <!-- Brokers Table -->
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="selectAllBrokers">
-                    <label class="form-check-label" for="selectAllBrokers">
-                        Select All
-                    </label>
-                </div>
-                <button id="compareBtn" class="btn btn-outline-secondary" disabled>
-                    <i class="bi bi-shuffle me-1"></i>
-                    Compare (<span id="compareCount">0</span>)
-                </button>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-striped table-hover align-middle">
-                    <thead class="table-light">
-                        <tr>
-                            <th style="width: 40px;"></th>
-                            <th>#</th>
-                            <th>Broker Name</th>
-                            <th>Contact</th>
-                            <th>Services</th>
-                            <th>Branches</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody id="brokersTableBody">
-                        <!-- Will be populated by JavaScript -->
-                    </tbody>
-                </table>
-            </div>
-            
-            <div class="text-center mt-4">
-                <p class="text-muted">Data source: SEBON & NEPSE (Last updated: August 2023)</p>
-                <div id="noResults" class="alert alert-warning d-none">No brokers found matching your criteria.</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Broker Details Modal -->
-    <div class="modal fade" id="brokerModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="brokerModalLabel">Broker Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="brokerDetails">
-                    <!-- Content will be loaded by JavaScript -->
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Image Slider -->
     <section class="py-0">
         <div class="container-fluid px-0">
@@ -2584,8 +2661,6 @@
         </div>
     </section>
 
-
-
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <style>
@@ -2739,24 +2814,6 @@
         </div>
     </section>
 
-    <!-- Comparison Modal -->
-    <div class="modal fade" id="compareModal" tabindex="-1" aria-labelledby="compareModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="compareModalLabel">Compare Brokers</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="compareModalBody">
-                    <!-- Comparison content will be inserted here by JavaScript -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- YouTube Latest Video -->
@@ -2765,592 +2822,6 @@
     <script src="js/language-switcher.js"></script>
     <!-- Visitor Counter JS -->
     <script src="js/visitor-counter.js"></script>
-    <!-- Brokers Section JS -->
-    <script>
-        // Enhanced broker data with ratings and more details
-        const brokersData = [
-            {
-                id: 1,
-                number: '58',
-                name: 'ABC Securities Pvt. Ltd.',
-                logo: 'https://via.placeholder.com/100x40?text=ABC+Securities',
-                phone: ['01-4427644', '01-4427645', '9801020304'],
-                email: 'info@abcsecurities.com.np',
-                headOffice: 'ABC Tower, Hattisar, Kathmandu',
-                established: '2007',
-                ceo: 'Mr. Rajesh Sharma',
-                description: 'ABC Securities is one of the leading stock brokers in Nepal with a strong presence across the country. We provide comprehensive stock broking services with advanced trading platforms and excellent customer support.',
-                services: ['Online', 'Mobile', 'Physical', 'Research', 'IPO'],
-                branches: [
-                    { city: 'Kathmandu', address: 'ABC Tower, Hattisar, Kathmandu' },
-                    { city: 'Pokhara', address: 'Chipledhunga Marg, Pokhara' },
-                    { city: 'Biratnagar', address: 'RNAC Road, Biratnagar-13' },
-                    { city: 'Bharatpur', address: 'Narayangarh Chowk, Bharatpur' },
-                    { city: 'Butwal', address: 'Sukhanagar, Butwal-10' }
-                ],
-                status: 'Active',
-                website: 'https://abcsecurities.com.np',
-                rating: 4.7,
-                reviews: 248,
-                minDeposit: 'NPR 10,000',
-                commission: '0.4% or NPR 25 (whichever is higher)',
-                tradingPlatforms: ['Web', 'Mobile App', 'Desktop'],
-                researchQuality: 'Excellent',
-                customerSupport: '24/5',
-                founded: 2007,
-                employees: 150
-            },
-            {
-                id: 2,
-                number: '34',
-                name: 'XYZ Capital Markets Ltd.',
-                logo: 'https://via.placeholder.com/100x40?text=XYZ+Capital',
-                phone: ['01-4423123', '01-4423124', '9802030405'],
-                email: 'info@xyzcapital.com.np',
-                headOffice: 'XYZ Complex, New Baneshwor, Kathmandu',
-                established: '2009',
-                ceo: 'Ms. Anjali Gurung',
-                description: 'XYZ Capital Markets is known for its innovative trading platforms and excellent customer service. We offer a wide range of investment products and services to meet the needs of all types of investors.',
-                services: ['Online', 'Mobile', 'Research', 'IPO'],
-                branches: [
-                    { city: 'Kathmandu', address: 'XYZ Complex, New Baneshwor, Kathmandu' },
-                    { city: 'Bharatpur', address: 'Narayangarh-10, Bharatpur' },
-                    { city: 'Dharan', address: 'Bhanu Chowk, Dharan' },
-                    { city: 'Bhairahawa', address: 'Siddharthanagar-8, Rupandehi' }
-                ],
-                status: 'Active',
-                website: 'https://xyzcapital.com.np',
-                rating: 4.5,
-                reviews: 198,
-                minDeposit: 'NPR 5,000',
-                commission: '0.35% or NPR 20 (whichever is higher)',
-                tradingPlatforms: ['Web', 'Mobile App'],
-                researchQuality: 'Very Good',
-                customerSupport: '24/5',
-                founded: 2009,
-                employees: 120
-            },
-            {
-                id: 3,
-                number: '12',
-                name: 'Nepal Investment Securities',
-                logo: 'https://via.placeholder.com/100x40?text=Nepal+Investment',
-                phone: ['01-5533444', '01-5533445', '9803040506'],
-                email: 'support@nepalinvestment.com.np',
-                headOffice: 'NIS Building, Putalisadak, Kathmandu',
-                established: '2005',
-                ceo: 'Mr. Suresh Thapa',
-                description: 'One of the oldest and most trusted stock brokers in Nepal with a wide network of branches. We provide reliable and efficient stock broking services with a focus on customer satisfaction and long-term relationships.',
-                services: ['Online', 'Physical', 'Research', 'IPO'],
-                branches: [
-                    { city: 'Kathmandu', address: 'NIS Building, Putalisadak, Kathmandu' },
-                    { city: 'Pokhara', address: 'Mahendrapul, Pokhara-6' },
-                    { city: 'Biratnagar', address: 'RNAC Road, Biratnagar-13' },
-                    { city: 'Bharatpur', address: 'Narayangarh-10, Bharatpur' },
-                    { city: 'Butwal', address: 'Sukhanagar, Butwal-10' },
-                    { city: 'Dharan', address: 'Bhanu Chowk, Dharan-8' },
-                    { city: 'Bhairahawa', address: 'Siddharthanagar-8, Rupandehi' },
-                    { city: 'Nepalgunj', address: 'New Road, Nepalgunj' }
-                ],
-                status: 'Active',
-                website: 'https://nepalinvestment.com.np',
-                rating: 4.8,
-                reviews: 325,
-                minDeposit: 'NPR 10,000',
-                commission: '0.45% or NPR 30 (whichever is higher)',
-                tradingPlatforms: ['Web', 'Mobile App', 'Desktop', 'Call & Trade'],
-                researchQuality: 'Outstanding',
-                customerSupport: '24/7',
-                founded: 2005,
-                employees: 250
-            },
-            {
-                id: 4,
-                number: '45',
-                name: 'Himalayan Capital',
-                logo: 'https://via.placeholder.com/150x50?text=Himalayan+Capital',
-                headOffice: 'Putalisadak, Kathmandu',
-                branches: [
-                    { city: 'Kathmandu', address: 'Putalisadak, Kathmandu' },
-                    { city: 'Biratnagar', address: 'Birat Chowk, Biratnagar' },
-                    { city: 'Bhairahawa', address: 'Siddharthanagar, Bhairahawa' }
-                ],
-                phone: ['01-4433221'],
-                email: 'info@himalayancapital.com',
-                website: 'https://himalayancapital.com',
-                services: ['Online', 'Mobile', 'Physical'],
-                status: 'Suspended',
-                established: '2008',
-                ceo: 'Nabin Karki',
-                description: 'Full-service brokerage firm with research and advisory.',
-                rating: 4.1,
-                reviews: 120,
-                minDeposit: 'NPR 5,000',
-                commission: '0.35% or NPR 20 (whichever is higher)',
-                tradingPlatforms: ['Web', 'Mobile App', 'Desktop'],
-                researchQuality: 'Very Good',
-                customerSupport: '24/5',
-                founded: 2008,
-                employees: 90
-            },
-            {
-                id: 5,
-                number: '27',
-                name: 'Everest Securities Ltd.',
-                logo: 'https://via.placeholder.com/100x40?text=Everest+Securities',
-                phone: ['01-5544556', '01-5544557', '9804050607'],
-                email: 'info@everestsecurities.com.np',
-                headOffice: 'Everest Plaza, Durbarmarg, Kathmandu',
-                established: '2010',
-                ceo: 'Mr. Bikram Pandey',
-                description: 'Everest Securities provides comprehensive stock broking services with a focus on technology and customer satisfaction. Our state-of-the-art trading platforms and research tools help investors make informed decisions.',
-                services: ['Online', 'Mobile', 'Physical', 'Research', 'IPO'],
-                logo: 'https://via.placeholder.com/150x50?text=Everest+Securities',
-                headOffice: 'New Baneshwor, Kathmandu',
-                branches: [
-                    { city: 'Kathmandu', address: 'New Baneshwor, Kathmandu' },
-                    { city: 'Pokhara', address: 'Chipledhunga, Pokhara' },
-                    { city: 'Biratnagar', address: 'RNAC Road, Biratnagar' },
-                    { city: 'Butwal', address: 'Butwal-10, Rupandehi' }
-                ],
-                phone: ['01-4455667', '01-4455668'],
-                email: 'info@everestsecurities.com',
-                website: 'https://everestsecurities.com',
-                services: ['Online', 'Mobile'],
-                status: 'Active',
-                established: '2012',
-                ceo: 'Prakash Thapa',
-                description: 'Leading broker with a focus on technology and customer service.'
-            }
-        ];
-
-        // DOM Elements
-        const brokersTableBody = document.getElementById('brokersTableBody');
-        const brokerSearch = document.getElementById('brokerSearch');
-        const serviceFilter = document.getElementById('serviceFilter');
-        const locationFilter = document.getElementById('locationFilter');
-        const noResults = document.getElementById('noResults');
-
-        // Track selected brokers for comparison
-        let selectedBrokerIds = new Set();
-
-        // Initialize the brokers table when the DOM is fully loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            renderBrokers(brokersData);
-            updateCompareButton();
-            
-            // Add event listeners for search, filter, and sort
-            const brokerSearch = document.getElementById('brokerSearch');
-            const serviceFilter = document.getElementById('serviceFilter');
-            const locationFilter = document.getElementById('locationFilter');
-            const sortBy = document.getElementById('sortBy');
-            const selectAllBrokers = document.getElementById('selectAllBrokers');
-            const compareBtn = document.getElementById('compareBtn');
-            
-            if (brokerSearch) brokerSearch.addEventListener('input', filterBrokers);
-            if (serviceFilter) serviceFilter.addEventListener('change', filterBrokers);
-            if (locationFilter) locationFilter.addEventListener('change', filterBrokers);
-            if (sortBy) sortBy.addEventListener('change', filterBrokers);
-            
-            // Handle select all checkbox
-            if (selectAllBrokers) {
-                selectAllBrokers.addEventListener('change', function() {
-                    const checkboxes = document.querySelectorAll('.broker-checkbox');
-                    const isChecked = this.checked;
-                    
-                    checkboxes.forEach(checkbox => {
-                        checkbox.checked = isChecked;
-                        if (isChecked) {
-                            selectedBrokerIds.add(parseInt(checkbox.value));
-                        } else {
-                            selectedBrokerIds.delete(parseInt(checkbox.value));
-                        }
-                    });
-                    
-                    updateCompareButton();
-                });
-            }
-            
-            // Handle compare button click
-            if (compareBtn) {
-                compareBtn.addEventListener('click', showCompareModal);
-            }
-            
-            // Delegate events for dynamic elements
-            document.addEventListener('click', function(e) {
-                // Handle compare button clicks in rows
-                if (e.target.closest('.compare-btn')) {
-                    const row = e.target.closest('tr');
-                    const checkbox = row.querySelector('.broker-checkbox');
-                    const brokerId = parseInt(checkbox.value);
-                    
-                    checkbox.checked = !checkbox.checked;
-                    
-                    if (checkbox.checked) {
-                        selectedBrokerIds.add(brokerId);
-                    } else {
-                        selectedBrokerIds.delete(brokerId);
-                    }
-                    
-                    updateCompareButton();
-                    e.preventDefault();
-                }
-                
-                // Handle individual checkbox clicks
-                if (e.target.classList.contains('broker-checkbox')) {
-                    const brokerId = parseInt(e.target.value);
-                    
-                    if (e.target.checked) {
-                        selectedBrokerIds.add(brokerId);
-                    } else {
-                        selectedBrokerIds.delete(brokerId);
-                        // Uncheck "Select All" if any checkbox is unchecked
-                        if (selectAllBrokers) {
-                            selectAllBrokers.checked = false;
-                        }
-                    }
-                    
-                    updateCompareButton();
-                }
-            });
-        });
-
-        // Filter and sort brokers based on search, filters, and sort criteria
-        function filterBrokers() {
-            const searchElement = document.getElementById('brokerSearch');
-            const serviceElement = document.getElementById('serviceFilter');
-            const locationElement = document.getElementById('locationFilter');
-            const sortElement = document.getElementById('sortBy');
-            
-            const searchTerm = searchElement ? searchElement.value.toLowerCase() : '';
-            const selectedService = serviceElement ? serviceElement.value : '';
-            const selectedLocation = locationElement ? locationElement.value : '';
-            const sortBy = sortElement ? sortElement.value : 'name_asc';
-
-            // Filter brokers
-            let filtered = brokersData.filter(broker => {
-                // Search term filter
-                const matchesSearch = 
-                    broker.name.toLowerCase().includes(searchTerm) ||
-                    broker.number.includes(searchTerm) ||
-                    broker.headOffice.toLowerCase().includes(searchTerm) ||
-                    broker.branches.some(b => 
-                        b.city.toLowerCase().includes(searchTerm) || 
-                        b.address.toLowerCase().includes(searchTerm)
-                    );
-                
-                // Service filter
-                const matchesService = !selectedService || broker.services.includes(selectedService);
-                
-                // Location filter
-                const matchesLocation = !selectedLocation || 
-                    broker.branches.some(b => b.city === selectedLocation);
-                
-                return matchesSearch && matchesService && matchesLocation;
-            });
-
-            // Sort brokers
-            filtered.sort((a, b) => {
-                switch(sortBy) {
-                    case 'name_asc':
-                        return a.name.localeCompare(b.name);
-                    case 'name_desc':
-                        return b.name.localeCompare(a.name);
-                    case 'rating_desc':
-                        return (b.rating || 0) - (a.rating || 0);
-                    case 'branches_desc':
-                        return b.branches.length - a.branches.length;
-                    default:
-                        return 0;
-                }
-            });
-
-            renderBrokers(filtered);
-        }
-
-        // Get icon for service
-        function getServiceIcon(service) {
-            const icons = {
-                'Online': 'laptop',
-                'Mobile': 'phone',
-                'Physical': 'building'
-            };
-            return icons[service] || 'check-circle';
-        }
-
-        // Show broker details in modal
-        window.showBrokerDetails = function(brokerId) {
-            const broker = brokersData.find(b => b.id === brokerId);
-            if (!broker) return;
-
-            const modal = new bootstrap.Modal(document.getElementById('brokerModal'));
-            const modalLabel = document.getElementById('brokerModalLabel');
-            const modalBody = document.getElementById('brokerDetails');
-            
-            modalLabel.textContent = `${broker.name} (${broker.number})`;
-            
-            // Format branches list
-            const branchesList = broker.branches.map(branch => 
-                `<li><strong>${branch.city}:</strong> ${branch.address}</li>`
-            ).join('');
-            
-            // Format phone numbers
-            const phoneNumbers = broker.phone.map(phone => 
-                `<li>${phone}</li>`
-            ).join('');
-            
-            modalBody.innerHTML = `
-                <div class="row">
-                    <div class="col-md-4 text-center mb-3">
-                        <img src="${broker.logo}" alt="${broker.name}" class="img-fluid mb-3" style="max-height: 80px;">
-                        <p class="mb-1"><strong>Status:</strong> <span class="badge ${broker.status === 'Active' ? 'bg-success' : 'bg-warning text-dark'}">${broker.status}</span></p>
-                        <p class="mb-1"><strong>Established:</strong> ${broker.established}</p>
-                        <p class="mb-1"><strong>CEO:</strong> ${broker.ceo}</p>
-                    </div>
-                    <div class="col-md-8">
-                        <h5>About</h5>
-                        <p>${broker.description}</p>
-                        
-                        <h5 class="mt-4">Contact Information</h5>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p class="mb-1"><i class="bi bi-geo-alt me-2"></i> <strong>Head Office:</strong></p>
-                                <p class="ms-4">${broker.headOffice}</p>
-                                
-                                <p class="mb-1"><i class="bi bi-telephone me-2"></i> <strong>Phone:</strong></p>
-                                <ul class="ms-4">
-                                    ${phoneNumbers}
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="mb-1"><i class="bi bi-envelope me-2"></i> <strong>Email:</strong></p>
-                                <p class="ms-4">${broker.email}</p>
-                                
-                                <p class="mb-1"><i class="bi bi-globe me-2"></i> <strong>Website:</strong></p>
-                                <p class="ms-4"><a href="${broker.website}" target="_blank">${broker.website.replace('https://', '')}</a></p>
-                            </div>
-                        </div>
-                        
-                        <h5 class="mt-4">Branch Locations</h5>
-                        <ul>
-                            ${branchesList}
-                        </ul>
-                        
-                        <h5 class="mt-4">Services</h5>
-                        <div>
-                            ${broker.services.map(service => 
-                                `<span class="badge bg-light text-dark me-2 mb-2 p-2">
-                                    <i class="bi ${getServiceIcon(service)} me-1"></i> ${service}
-                                </span>`
-                            ).join('')}
-                        </div>
-                    </div>
-                </div>
-            `;
-            
-            modal.show();
-        };
-
-        // Update compare button state based on selected brokers
-        function updateCompareButton() {
-            const compareBtn = document.getElementById('compareBtn');
-            const compareCount = document.getElementById('compareCount');
-            const selectedCount = selectedBrokerIds.size;
-            
-            if (compareBtn) {
-                compareBtn.disabled = selectedCount < 2;
-                if (compareCount) compareCount.textContent = selectedCount;
-                
-                // Update button style based on selection count
-                if (selectedCount >= 2 && selectedCount <= 4) {
-                    compareBtn.classList.remove('btn-outline-secondary');
-                    compareBtn.classList.add('btn-primary');
-                } else {
-                    compareBtn.classList.remove('btn-primary');
-                    compareBtn.classList.add('btn-outline-secondary');
-                }
-            }
-        }
-        
-        // Show comparison modal with selected brokers
-        function showCompareModal() {
-            if (selectedBrokerIds.size < 2) return;
-            
-            const selectedBrokers = brokersData.filter(broker => selectedBrokerIds.has(broker.id));
-            const modal = new bootstrap.Modal(document.getElementById('compareModal'));
-            const modalBody = document.getElementById('compareModalBody');
-            
-            // Generate comparison table
-            let html = `
-                <div class="table-responsive">
-                    <table class="table table-bordered align-middle">
-                        <thead class="table-light">
-                            <tr>
-                                <th style="width: 200px;">Feature</th>
-                                ${selectedBrokers.map(broker => `
-                                    <th class="text-center">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <img src="${broker.logo}" alt="${broker.name}" style="height: 40px; margin-bottom: 10px;">
-                                            <div class="fw-bold">${broker.name}</div>
-                                            <div class="small text-muted">${broker.number}</div>
-                                        </div>
-                                    </th>
-                                `).join('')}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="fw-bold">Rating</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td class="text-center">
-                                        <span class="badge bg-warning text-dark">
-                                            <i class="bi bi-star-fill"></i> ${broker.rating.toFixed(1)}
-                                            <small class="text-muted">(${broker.reviews})</small>
-                                        </span>
-                                    </td>
-                                `).join('')}
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Status</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td class="text-center">
-                                        <span class="badge ${broker.status === 'Active' ? 'bg-success' : 'bg-warning text-dark'}">
-                                            ${broker.status}
-                                        </span>
-                                    </td>
-                                `).join('')}
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Established</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td class="text-center">${broker.established}</td>
-                                `).join('')}
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Branches</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td class="text-center">
-                                        ${broker.branches.length} locations
-                                        <div class="small text-muted">${[...new Set(broker.branches.map(b => b.city))].join(', ')}</div>
-                                    </td>
-                                `).join('')}
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Services</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td>
-                                        ${broker.services.map(service => `
-                                            <span class="badge bg-light text-dark d-block mb-1">${service}</span>
-                                        `).join('')}
-                                    </td>
-                                `).join('')}
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Commission</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td class="text-center">${broker.commission}</td>
-                                `).join('')}
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Minimum Deposit</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td class="text-center">${broker.minDeposit}</td>
-                                `).join('')}
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Contact</td>
-                                ${selectedBrokers.map(broker => `
-                                    <td>
-                                        <div class="small"><i class="bi bi-telephone me-1"></i> ${broker.phone[0]}</div>
-                                        <div class="small"><i class="bi bi-envelope me-1"></i> ${broker.email}</div>
-                                    </td>
-                                `).join('')}
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="mt-3 text-end">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            `;
-            
-            modalBody.innerHTML = html;
-            modal.show();
-        }
-        
-        // Render brokers in the table with comparison checkboxes
-        function renderBrokers(brokers) {
-            if (!brokersTableBody) return;
-            
-            if (brokers.length === 0) {
-                if (noResults) noResults.classList.remove('d-none');
-                brokersTableBody.innerHTML = '';
-                return;
-            }
-            
-            if (noResults) noResults.classList.add('d-none');
-            brokersTableBody.innerHTML = '';
-            
-            brokers.forEach(broker => {
-                const row = document.createElement('tr');
-                const branchCities = [...new Set(broker.branches.map(b => b.city))];
-                const isChecked = selectedBrokerIds.has(broker.id);
-                
-                row.innerHTML = `
-                    <td class="align-middle">
-                        <div class="form-check">
-                            <input class="form-check-input broker-checkbox" type="checkbox" 
-                                   value="${broker.id}" id="broker-${broker.id}" ${isChecked ? 'checked' : ''}>
-                        </div>
-                    </td>
-                    <td>${broker.number}</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="${broker.logo}" alt="${broker.name}" class="me-2" style="height: 24px; width: auto;">
-                            ${broker.name}
-                        </div>
-                    </td>
-                    <td>
-                        <small><i class="bi bi-telephone me-1"></i> ${broker.phone[0]}</small><br>
-                        <small><i class="bi bi-envelope me-1"></i> ${broker.email}</small>
-                    </td>
-                    <td>
-                        ${broker.services.map(service => 
-                            `<span class="badge bg-light text-dark me-1 mb-1">${service}</span>`
-                        ).join('')}
-                    </td>
-                    <td>
-                        <small>${branchCities.length} locations</small>
-                    </td>
-                    <td>
-                        <span class="badge ${broker.status === 'Active' ? 'bg-success' : 'bg-warning text-dark'}">
-                            ${broker.status}
-                        </span>
-                    </td>
-                    <td>
-                        <div class="d-flex gap-1">
-                            <button class="btn btn-sm btn-outline-primary" onclick="showBrokerDetails(${broker.id})" title="View Details">
-                                <i class="bi bi-eye"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-success compare-btn" data-broker-id="${broker.id}" title="Add to Compare">
-                                <i class="bi bi-shuffle"></i>
-                            </button>
-                        </div>
-                    </td>
-                `;
-                brokersTableBody.appendChild(row);
-            });
-            
-            // Update the select all checkbox state
-            const selectAllCheckbox = document.getElementById('selectAllBrokers');
-            if (selectAllCheckbox) {
-                const allCheckboxes = document.querySelectorAll('.broker-checkbox');
-                const allChecked = allCheckboxes.length > 0 && Array.from(allCheckboxes).every(cb => cb.checked);
-                selectAllCheckbox.checked = allChecked;
-            }
-        }
-    </script>
-    
     <!-- Custom JS -->
     <script src="script.js"></script>
     

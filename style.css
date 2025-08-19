@@ -30,35 +30,37 @@ blockquote cite {
 /* Hero Section */
 .hero-banner {
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
     position: relative;
     overflow: hidden;
-    padding-top: 76px; /* Height of the navbar */
-    margin-top: -76px; /* Pull up to account for fixed navbar */
+    padding: 100px 0 60px;
+    margin: 0;
 }
 
 .hero-banner .container {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 .hero-banner h1 {
-    font-size: 3.2rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-banner .lead {
-    font-size: 1.6rem;
-    margin-bottom: 2.5rem;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    margin-bottom: 2rem;
     opacity: 0.9;
     max-width: 700px;
     margin-left: auto;
@@ -67,37 +69,84 @@ blockquote cite {
 
 .hero-banner .btn {
     font-weight: 600;
-    padding: 0.8rem 2.5rem;
-    font-size: 1.1rem;
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
     border-radius: 50px;
-    margin: 0 0.5rem 1rem;
+    margin: 0.3rem 0.5rem 1rem;
     transition: all 0.3s ease;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-profile-img {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border: 5px solid rgba(255, 255, 255, 0.3);
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     transition: transform 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
 }
 
 .hero-profile-img:hover {
     transform: scale(1.05);
 }
 
-/* Adjust for smaller screens */
-@media (max-width: 768px) {
-    .hero-banner {
-        text-align: center;
-        padding-top: 100px;
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+    .hero-banner .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-banner .container {
+        max-width: 720px;
     }
     
-    .hero-banner h1 {
-        font-size: 2.5rem;
+    .hero-banner {
+        text-align: center;
+        padding: 80px 0 40px;
     }
+    
+    .hero-banner .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+        margin: 0.2rem 0.3rem 0.8rem;
+    }
+    
+    .hero-profile-img {
+        max-width: 240px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-banner {
+        padding: 70px 0 30px;
+    }
+    
+    .hero-banner .btn {
+        width: 100%;
+        max-width: 250px;
+        margin: 0.2rem auto 0.8rem;
+        display: block;
+    }
+    
+    .hero-banner .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-profile-img {
+        max-width: 200px;
+    }
+}
     
     .hero-banner .lead {
         font-size: 1.3rem;

@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1e3a8a">
     <title>Yadav Bhandari | Portfolio</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -85,20 +88,34 @@
     </nav>
 
     <!-- Hero Banner -->
-    <section id="home" class="hero-banner home-section py-5" style="background: #000000;">
-        <div class="container min-vh-100 d-flex align-items-center">
-            <div class="row align-items-center justify-content-between">
+    <section id="home" class="hero-banner home-section py-4 py-md-5">
+        <div class="container d-flex align-items-center min-vh-100">
+            <div class="row align-items-center justify-content-center justify-content-lg-between">
                 <!-- Left Column - Profile -->
-                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-4">
-                        <img src="yadav.jpg.jpg" alt="Yadav Bhandari" 
-                             class="me-4 rounded-circle" 
-                             style="width: 320px; height: 320px; object-fit: cover; border: 6px solid #ffc107; box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.4);">
-                        <div class="text-start">
-                            <h1 class="display-4 fw-bold text-white mb-1">Yadav Bhandari</h1>
-                            <div class="d-flex align-items-center">
+                <div class="col-12 col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-start mb-4">
+                        <!-- Profile Image -->
+                        <div class="position-relative mb-4 mb-md-0 me-md-4">
+                            <img src="yadav.jpg.jpg" alt="Yadav Bhandari" 
+                                 class="img-fluid rounded-circle hero-profile-img"
+                                 style="width: 200px; height: 200px; object-fit: cover; border: 4px solid #ffc107; box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);">
+                        </div>
+                        <!-- Profile Text -->
+                        <div class="text-center text-md-start mt-3 mt-md-0">
+                            <h1 class="display-5 display-lg-4 fw-bold text-white mb-2">Yadav Bhandari</h1>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
                                 <div class="bg-warning me-2" style="width: 30px; height: 2px;"></div>
                                 <p class="lead text-white-50 mb-0">NEPSE Investment Expert</p>
+                            </div>
+                            
+                            <!-- Mobile CTA Buttons (only visible on small screens) -->
+                            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start mt-4 d-lg-none">
+                                <a href="#portfolio" class="btn btn-warning btn-lg px-4 py-2 fw-bold">
+                                    <i class="bi bi-briefcase me-2"></i>View Portfolio
+                                </a>
+                                <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-2 fw-bold mt-2 mt-sm-0">
+                                    <i class="bi bi-chat-dots me-2"></i>Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +194,111 @@
         </div>
     </section>
 
+    <!-- Investment Strategy -->
+    <section id="investment-strategy" class="py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container position-relative">
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark mb-3 px-4 py-2 rounded-pill fw-normal">
+                    <i class="bi bi-graph-up-arrow me-2"></i>Investment Strategy
+                </span>
+                <h2 class="display-5 fw-bold mb-3">My Investment Philosophy</h2>
+                <p class="lead text-muted">Data-driven decisions for sustainable wealth creation</p>
+            </div>
 
+            <div class="row g-4">
+                <!-- Strategy 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3" style="width: 60px;">
+                                <i class="bi bi-bar-chart-line fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Technical Analysis</h5>
+                            <p class="text-muted">Advanced chart patterns and indicators to identify optimal entry and exit points with high probability setups.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Price Action Analysis</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Volume Profile</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Multiple Timeframe Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3" style="width: 60px;">
+                                <i class="bi bi-building fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Fundamental Analysis</h5>
+                            <p class="text-muted">In-depth company analysis to identify undervalued stocks with strong growth potential.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Financial Statement Analysis</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Valuation Metrics</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Industry Comparison</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3" style="width: 60px;">
+                                <i class="bi bi-shield-lock fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Risk Management</h5>
+                            <p class="text-muted">Strict risk parameters to protect capital while maximizing returns.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Position Sizing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Stop-Loss Strategies</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Portfolio Diversification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Performance -->
+    <section id="trading-performance" class="py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0a58ca 0%, #0d6efd 100%);">
+        <div class="container position-relative">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white mb-3">Trading Performance</h2>
+                <p class="lead text-white-50">Transparent and verifiable trading results</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 bg-white bg-opacity-10 rounded-3 border border-white border-opacity-10">
+                        <h3 class="display-4 fw-bold text-warning mb-1">87%</h3>
+                        <p class="text-white-50 mb-0">Win Rate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 bg-white bg-opacity-10 rounded-3 border border-white border-opacity-10">
+                        <h3 class="display-4 fw-bold text-warning mb-1">2.8:1</h3>
+                        <p class="text-white-50 mb-0">Risk/Reward Ratio</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 bg-white bg-opacity-10 rounded-3 border border-white border-opacity-10">
+                        <h3 class="display-4 fw-bold text-warning mb-1">24.5%</h3>
+                        <p class="text-white-50 mb-0">Annual Return</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 bg-white bg-opacity-10 rounded-3 border border-white border-opacity-10">
+                        <h3 class="display-4 fw-bold text-warning mb-1">1.3</h3>
+                        <p class="text-white-50 mb-0">Sharpe Ratio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- My Trading Accuracy -->
     <section class="py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);">
@@ -357,6 +478,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Chart.js Script -->
     <script>
@@ -2352,6 +2474,159 @@
                         <h5 class="fw-bold mb-3" style="color: #000000 !important;">Working Hours</h5>
                         <p class="mb-0" style="color: #000000 !important;">Sun-Fri: 9:00 AM - 5:00 PM</p>
                         <p class="mb-0" style="color: #000000 !important;">Saturday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Tools & Resources -->
+    <section id="trading-tools" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark mb-3 px-4 py-2 rounded-pill fw-normal">
+                    <i class="bi bi-tools me-2"></i>Trading Resources
+                </span>
+                <h2 class="display-5 fw-bold mb-3">Essential Trading Tools</h2>
+                <p class="lead text-muted">Free resources to enhance your trading journey</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Technical Analysis Guide -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="bi bi-bar-chart-line fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Technical Analysis Guide</h5>
+                            <p class="text-muted small">Master chart patterns, indicators, and technical analysis strategies used by professionals.</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm mt-2">Download Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stock Screener -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="bi bi-funnel fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Stock Screener</h5>
+                            <p class="text-muted small">Filter NEPSE stocks based on technical and fundamental parameters to find your next trade.</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm mt-2">Access Screener</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Calculator -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="bi bi-calculator fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Risk Calculator</h5>
+                            <p class="text-muted small">Calculate optimal position size and risk-reward ratio for your trades based on your account size.</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm mt-2">Calculate Risk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Calendar -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="bi bi-calendar3 fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Market Calendar</h5>
+                            <p class="text-muted small">Stay updated with upcoming earnings reports, dividends, and important market events.</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm mt-2">View Calendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Resources -->
+            <div class="mt-5 pt-4">
+                <div class="text-center mb-5">
+                    <h3 class="fw-bold mb-4">Educational Resources</h3>
+                    <p class="lead text-muted">Learn from our comprehensive trading guides and video tutorials</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://via.placeholder.com/400x225" class="card-img-top" alt="Trading Course">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-warning text-dark">Free</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-light text-dark me-2">Course</span>
+                                    <small class="text-muted"><i class="bi bi-clock me-1"></i> 2h 15m</small>
+                                </div>
+                                <h5 class="card-title fw-bold">Technical Analysis Masterclass</h5>
+                                <p class="card-text text-muted small">Learn how to read charts, identify trends, and spot trading opportunities like a pro.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <small class="text-muted">4.9 (128 reviews)</small>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-warning">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://via.placeholder.com/400x225" class="card-img-top" alt="Webinar">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-warning text-dark">Live</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-danger bg-opacity-10 text-danger me-2">Live Webinar</span>
+                                    <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> Tomorrow, 6 PM</small>
+                                </div>
+                                <h5 class="card-title fw-bold">NEPSE Market Outlook 2025</h5>
+                                <p class="card-text text-muted small">Join our live session to understand the market trends and opportunities for 2025.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-people-fill text-muted me-1"></i>
+                                        <small class="text-muted">1,245 registered</small>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-warning">Register Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://via.placeholder.com/400x225" class="card-img-top" alt="Ebook">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-primary bg-opacity-10 text-primary">Premium</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-primary bg-opacity-10 text-primary me-2">E-book</span>
+                                    <small class="text-muted"><i class="bi bi-file-earmark-text me-1"></i> 120 pages</small>
+                                </div>
+                                <h5 class="card-title fw-bold">The Complete Guide to NEPSE Trading</h5>
+                                <p class="card-text text-muted small">Everything you need to know about trading in the Nepalese stock market.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-download text-muted me-1"></i>
+                                        <small class="text-muted">2.4K downloads</small>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Get E-book</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

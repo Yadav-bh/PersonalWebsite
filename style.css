@@ -27,7 +27,7 @@ blockquote cite {
     font-weight: 500;
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 .hero-banner {
     min-height: 100vh;
     min-height: 100dvh;
@@ -37,11 +37,24 @@ blockquote cite {
     color: white;
     position: relative;
     overflow: hidden;
-    padding: 100px 0 60px;
+    padding: 80px 0 40px;
     margin: 0;
 }
 
-.hero-banner .container {
+/* Hero Profile Image */
+.hero-profile-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-profile-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Hero Content */
+.hero-content {
     position: relative;
     z-index: 2;
     width: 100%;
@@ -97,13 +110,20 @@ blockquote cite {
     transform: scale(1.05);
 }
 
-/* Responsive adjustments */
+/* ===== Responsive Adjustments ===== */
+/* Extra large devices (large desktops) */
 @media (max-width: 1199.98px) {
     .hero-banner .container {
         max-width: 960px;
     }
+    
+    /* Adjust font sizes for better readability */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
 }
 
+/* Large devices (desktops) */
 @media (max-width: 991.98px) {
     .hero-banner .container {
         max-width: 720px;
@@ -124,39 +144,139 @@ blockquote cite {
         max-width: 240px;
         margin-bottom: 1.5rem;
     }
+    
+    /* Adjust padding for sections */
+    section {
+        padding: 3rem 0;
+    }
+    
+    /* Improve card layouts */
+    .card {
+        margin-bottom: 1.5rem;
+    }
 }
 
+/* Medium devices (tablets) */
 @media (max-width: 767.98px) {
+    html {
+        font-size: 15px; /* Slightly reduce base font size */
+    }
+    
     .hero-banner {
         padding: 70px 0 30px;
     }
     
     .hero-banner .btn {
         width: 100%;
-        max-width: 250px;
-        margin: 0.2rem auto 0.8rem;
+        max-width: 280px;
+        margin: 0.5rem auto;
         display: block;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
     
     .hero-banner .btn-group {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     
     .hero-profile-img {
         max-width: 200px;
+        margin: 0 auto 1.5rem;
+    }
+    
+    /* Improve typography for mobile */
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+    
+    /* Adjust section padding */
+    section {
+        padding: 2.5rem 0;
+    }
+    
+    /* Improve form elements for touch */
+    .form-control, 
+    .btn, 
+    .form-select {
+        min-height: 48px; /* Minimum touch target size */
     }
 }
-    
-    .hero-banner .lead {
-        font-size: 1.3rem;
+
+/* Small devices (landscape phones) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 14px;
     }
     
-    .hero-banner .btn {
-        display: block;
-        width: 80%;
-        max-width: 250px;
-        margin: 0 auto 1rem;
+    .hero-banner {
+        padding: 60px 0 20px;
+    }
+    
+    .hero-banner h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-banner .lead {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Adjust padding and margins */
+    .container, 
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Improve card layouts */
+    .card {
+        border-radius: 10px;
+        margin-bottom: 1.25rem;
+    }
+    
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Improve button touch targets */
+    .btn {
+        padding: 0.7rem 1.25rem;
+        font-size: 1rem;
+    }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 399.98px) {
+    html {
+        font-size: 13px;
+    }
+    
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.4rem; }
+    
+    /* Adjust spacing */
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Improve form elements */
+    .form-control,
+    .form-select {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+    
+    /* Make sure all clickable elements are touch-friendly */
+    a, button, [role="button"], input, label, select, textarea {
+        min-height: 44px;
+        min-width: 44px;
     }
 }
 
@@ -207,9 +327,161 @@ blockquote cite {
 }
 
 .navbar {
-    padding: 15px 0;
+    padding: 0.75rem 1rem;
     transition: all 0.3s ease;
-    background-color: #28a745; /* Green color */
+    background-color: #343a40;
+}
+
+/* Mobile Navigation */
+.navbar-toggler {
+    padding: 0.5rem 0.75rem;
+    font-size: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1);
+}
+
+.navbar-collapse {
+    padding: 1rem 0;
+}
+
+/* Improve dropdown for touch devices */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 0.5rem;
+    min-width: 200px;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:active {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Nested dropdown menus */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #343a40;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .nav-item {
+        margin: 0.25rem 0;
+    }
+    
+    .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: 100%;
+        margin: 0.5rem 0 0 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .dropdown-submenu>.dropdown-menu {
+        left: 1rem;
+        right: 1rem;
+        width: auto;
+        margin: 0.5rem 0 0 1rem;
+    }
+    
+    .navbar-nav .dropdown-toggle::after {
+        float: right;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Fix for navbar brand on mobile */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+/* Adjust navbar links for better touch targets */
+.nav-link {
+    padding: 0.5rem 1rem;
+    position: relative;
+    font-weight: 500;
+}
+
+/* Active state for nav items */
+.nav-item .nav-link.active {
+    color: #ffc107 !important;
+    font-weight: 600;
+}
+
+/* Hover effect for nav links */
+.nav-link:not(.active):hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Improve mobile menu toggle button */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Language switcher in nav */
+.language-switcher {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.language-switcher:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Visitor counter in nav */
+.visitor-counter {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+}
+
+/* Responsive adjustments for visitor counter */
+@media (max-width: 767.98px) {
+    .visitor-counter {
+        margin: 0.5rem auto;
+        display: inline-flex;
+    }
 }
 
 .contact-section .form-control:focus,
@@ -615,50 +887,87 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-@media (max-width: 768px) {
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+    .hero-banner {
+        text-align: center;
+        padding: 70px 0 40px;
+    }
+    
     .hero-banner h1 {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
     
     .hero-banner .lead {
         font-size: 1.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
     }
     
     .hero-banner .btn {
         width: 80%;
-        margin: 0.5rem auto;
+        max-width: 280px;
+        margin: 0.5rem auto !important;
         display: block;
     }
     
     .hero-profile-img {
         width: 180px;
         height: 180px;
+        margin: 0 auto 2rem;
     }
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
     .hero-banner {
-        min-height: 60vh;
-        min-height: 60dvh;
-    }
-    
-    .hero-banner .container {
-        max-width: 98vw;
-        padding: 0 8px;
+        min-height: auto;
+        padding: 50px 0 20px;
     }
     
     .hero-banner h1 {
-        font-size: 2.2rem;
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
     }
     
     .hero-banner .lead {
         font-size: 1.1rem;
+        margin-bottom: 1.5rem;
     }
     
     .hero-banner .btn {
-        padding: 0.6rem 1.5rem;
+        width: 100%;
+        max-width: 280px;
+        margin: 0.5rem auto !important;
+    }
+    
+    .hero-profile-img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-banner h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-banner .lead {
+        font-size: 1rem;
+    }
+    
+    .hero-banner .btn {
+        padding: 0.7rem 1.25rem;
         font-size: 0.9rem;
+    }
+    
+    .hero-profile-img {
+        width: 140px;
+        height: 140px;
     }
 }
 
@@ -774,12 +1083,10 @@ body {
     }
 }
 
-/* Profile image styles */
 /* Navbar Visitor Counter */
 .navbar .visitor-counter {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     color: #000000; /* Black text */
     background-color: white; /* White background */
     font-size: 0.9rem;
@@ -805,32 +1112,11 @@ body {
 
 .navbar .visitor-counter span {
     color: #000000; /* Ensure 'Visitors:' text is black */
-=======
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-    transition: color 0.3s ease;
-}
-
-.navbar .visitor-counter:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar .visitor-counter i {
-    margin-right: 4px;
-    color: #ffc107;
->>>>>>> recovery-branch
 }
 
 .navbar .visitor-counter #visitorCount {
     font-weight: 600;
-<<<<<<< HEAD
     color: #000000; /* Ensure count is black */
-=======
-    color: #fff;
->>>>>>> recovery-branch
     margin-left: 2px;
 }
 

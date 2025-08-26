@@ -14,6 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.11.0/css/flag-icons.min.css" />
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -22,7 +24,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow" style="z-index: 1030;">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">Yadav Bhandari</a>
+            <a class="navbar-brand fw-bold" href="#home">The Yadav Bhandari</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -31,55 +33,22 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about" data-i18n="about">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Education
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="sectorAnalysisDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sector Analysis
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu" aria-labelledby="sectorAnalysisDropdown">
-                                    <li><a class="dropdown-item" href="commercial-banks.html">Commercial Banks</a></li>
-                                    <li><a class="dropdown-item" href="development-banks.html">Development Banks</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="finance-companies.html">Finance</a></li>
-                                    <li><a class="dropdown-item" href="hotels.html">Hotels</a></li>
-                                    <li><a class="dropdown-item" href="hydropower.html">Hydro Power</a></li>
-                                    <li><a class="dropdown-item" href="investment-companies.html">Investment</a></li>
-                                    <li><a class="dropdown-item" href="life-insurance.html">Life Insurance</a></li>
-                                    <li><a class="dropdown-item" href="manufacturing-processing.html">Manufacturing</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="microfinance.html">Microfinance</a></li>
-                                    <li><a class="dropdown-item" href="non-life-insurance.html">Non Life Insurance</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="others.html">Others</a></li>
-                                    <li><a class="dropdown-item" href="trading.html">Trading</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#education" data-i18n="education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services" data-i18n="services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio" data-i18n="portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog" data-i18n="blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials"
                             data-i18n="testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="contact">Contact</a></li>
-                    <li class="nav-item d-flex align-items-center px-2">
-                        <div class="visitor-counter bg-white rounded-pill px-3 py-1 d-flex align-items-center">
-                            <i class="bi bi-people-fill me-1 text-primary"></i>
-                            <span class="me-1">Visitors:</span>
-                            <span id="visitorCount" class="fw-bold" style="color: black !important;">Loading...</span>
-                        </div>
-                    </li>
                     <li class="nav-item ms-2">
                         <div class="language-switcher nav-link" id="languageSwitcher">
-                            <span class="language-option active" data-lang="en">EN</span>
+                            <span class="language-option active" data-lang="en">
+                                <span class="fi fi-us me-1"></span>EN
+                            </span>
                             <span class="language-separator">/</span>
-                            <span class="language-option" data-lang="np">नेपा</span>
+                            <span class="language-option" data-lang="np">
+                                <span class="fi fi-np me-1"></span>नेपा
+                            </span>
                         </div>
                     </li>
                 </ul>
@@ -1096,7 +1065,7 @@
                     <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="100">
                         <div class="testimonial-content">
                             <div class="testimonial-avatar">
-                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rahul Kapoor">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ramu Bhattrai">
                                 <div class="testimonial-rating">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -1109,7 +1078,7 @@
                                 <p>"Yadav's market insights are incredibly accurate. His technical analysis helped me identify the perfect entry and exit points, boosting my trading success rate by 65%."</p>
                             </div>
                             <div class="testimonial-author">
-                                <h5>Rahul Kapoor</h5>
+                                <h5>Ramu Bhattrai</h5>
                                 <span>Equity Analyst</span>
                             </div>
                             <div class="testimonial-quote">
@@ -1124,7 +1093,7 @@
                     <div class="testimonial-card h-100" data-aos="fade-up" data-aos-delay="200">
                         <div class="testimonial-content">
                             <div class="testimonial-avatar">
-                                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Meera Desai">
+                                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Hari Prasad Bhandari">
                                 <div class="testimonial-rating">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -1137,7 +1106,7 @@
                                 <p>"As a beginner, Yadav's mentorship was invaluable. His clear explanations and practical strategies helped me grow my initial investment by 180% in my first year of trading."</p>
                             </div>
                             <div class="testimonial-author">
-                                <h5>Meera Desai</h5>
+                                <h5>Hari Prasad Bhandari</h5>
                                 <span>Retail Investor</span>
                             </div>
                             <div class="testimonial-quote">
@@ -1510,259 +1479,6 @@
         </style>
     </section>
 
-    <!-- Sector Analysis -->
-    <section id="sector-analysis" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" style="color: #ffc107 !important;">Sector Analysis</h2>
-            <p class="text-center text-white mb-5">Explore key market sectors with our in-depth analysis and insights
-            </p>
-
-            <div class="row g-4">
-                <!-- Commercial Banks -->
-                <div class="col-md-4 text-center">
-                    <a href="commercial-banks.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-bank fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Commercial Banks</h3>
-                            <p class="text-muted">Analysis of major banking institutions and their market performance
-                            </p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Development Banks -->
-                <div class="col-md-4 text-center">
-                    <a href="development-banks.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-building fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Development Banks</h3>
-                            <p class="text-muted">Insights into development banking sector and growth opportunities</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Finance -->
-                <div class="col-md-4 text-center">
-                    <a href="finance-companies.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-info bg-opacity-10 text-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-cash-coin fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Finance</h3>
-                            <p class="text-muted">Comprehensive analysis of finance companies and NBFCs</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Hotels -->
-                <div class="col-md-4 text-center">
-                    <a href="hotels.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-warning bg-opacity-10 text-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-building fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Hotels</h3>
-                            <p class="text-muted">Analysis of hospitality sector and tourism-related stocks</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Hydropower -->
-                <div class="col-md-4 text-center">
-                    <a href="hydropower.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-danger bg-opacity-10 text-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-lightning-charge fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Hydropower</h3>
-                            <p class="text-muted">Insights into hydropower generation and energy sector</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <a href="investment-companies.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-graph-up-arrow fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Investment</h3>
-                            <p class="text-muted">Analysis of investment companies and funds</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Life Insurance -->
-                <div class="col-md-4 text-center">
-                    <a href="life-insurance.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-heart-pulse fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Life Insurance</h3>
-                            <p class="text-muted">Comprehensive coverage of life insurance sector</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Manufacturing -->
-                <div class="col-md-4 text-center">
-                    <a href="manufacturing-processing.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-gear fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Manufacturing</h3>
-                            <p class="text-muted">Industrial and manufacturing sector analysis</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Microfinance -->
-                <div class="col-md-4 text-center">
-                    <a href="microfinance.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-info bg-opacity-10 text-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-people fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Microfinance</h3>
-                            <p class="text-muted">Microfinance institutions and their market impact</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Non-Life Insurance -->
-                <div class="col-md-4 text-center">
-                    <a href="non-life-insurance.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-warning bg-opacity-10 text-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-shield-check fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Non-Life Insurance</h3>
-                            <p class="text-muted">Analysis of non-life insurance companies</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Others -->
-                <div class="col-md-4 text-center">
-                    <a href="others.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-danger bg-opacity-10 text-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-grid-3x3 fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Others</h3>
-                            <p class="text-muted">Miscellaneous sectors and emerging markets</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Trading -->
-                <div class="col-md-4 text-center">
-                    <a href="trading.html" class="text-decoration-none">
-                        <div class="sector-item p-4 rounded-3 h-100 shadow-sm">
-                            <div class="sector-icon bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                                style="width: 80px; height: 80px;">
-                                <i class="bi bi-arrow-left-right fs-1"></i>
-                            </div>
-                            <h3 class="h5 mb-3 text-dark">Trading</h3>
-                            <p class="text-muted">Trading companies and their market dynamics</p>
-                        </div>
-                    </a>
-                </div>
-
-
-            </div>
-
-            <style>
-                .sector-item {
-                    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    border: 1px solid rgba(0, 0, 0, 0.05);
-                    position: relative;
-                    overflow: hidden;
-                    background: white;
-                    z-index: 1;
-                }
-
-                .sector-item::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
-                    opacity: 0;
-                    transition: opacity 0.4s ease;
-                    z-index: -1;
-                }
-
-                .sector-item:hover {
-                    transform: translateY(-8px) scale(1.02);
-                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12) !important;
-                }
-
-                .sector-item:hover::before {
-                    opacity: 1;
-                }
-
-                .sector-icon {
-                    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                    will-change: transform;
-                }
-
-                .sector-item:hover .sector-icon {
-                    transform: scale(1.15) rotate(5deg);
-                    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-                }
-
-                .sector-item h5 {
-                    transition: transform 0.3s ease, color 0.3s ease;
-                    position: relative;
-                    display: inline-block;
-                }
-
-                .sector-item:hover h5 {
-                    transform: translateY(-2px);
-                    color: #0d6efd;
-                }
-
-                .sector-item:hover .sector-icon.bg-primary {
-                    background-color: rgba(13, 110, 253, 0.15) !important;
-                }
-
-                .sector-item:hover .sector-icon.bg-success {
-                    background-color: rgba(25, 135, 84, 0.15) !important;
-                }
-
-                .sector-item:hover .sector-icon.bg-info {
-                    background-color: rgba(13, 202, 240, 0.15) !important;
-                }
-
-                .sector-item:hover .sector-icon.bg-warning {
-                    background-color: rgba(255, 193, 7, 0.15) !important;
-                }
-
-                .sector-item:hover .sector-icon.bg-danger {
-                    background-color: rgba(220, 53, 69, 0.15) !important;
-                }
-            </style>
-        </div>
-    </section>
 
     <!-- Services -->
     <section id="services" class="py-5 services-section">
@@ -2059,24 +1775,18 @@
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card">
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3"
-                                    width="60" height="60" alt="Rajesh Shrestha">
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Rajesh Shrestha</h6>
-                                    <small class="text-muted">Long-term Investor</small>
-                                    <div class="mt-1">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold">Rajesh Sharma</h6>
+                                <small class="text-muted">Portfolio Manager, NIBL Capital</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
                                 </div>
                             </div>
-                            <p class="card-text">"Yadav's NEPSE market analysis has been a game-changer for my
-                                investment strategy. His technical analysis helped me identify entry and exit points I
-                                would have otherwise missed."</p>
+                            <p class="card-text">"Yadav's fundamental analysis transformed my approach to stock picking. I've seen a 47% return on my portfolio in just 8 months!"</p>
                             <div class="text-muted small">
                                 <i class="bi bi-quote me-2"></i>2 months ago
                             </div>
@@ -2088,23 +1798,18 @@
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card">
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3"
-                                    width="60" height="60" alt="Anjali Gurung">
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Anjali Gurung</h6>
-                                    <small class="text-muted">Retail Trader</small>
-                                    <div class="mt-1">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                    </div>
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold">Priya Koirala</h6>
+                                <small class="text-muted">Day Trader</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
                                 </div>
                             </div>
-                            <p class="card-text">"The stock recommendations have consistently outperformed the market.
-                                I've seen a 35% return on my portfolio since following Yadav's advice."</p>
+                            <p class="card-text">"The technical analysis strategies helped me identify breakout stocks with 85% accuracy. My trading account has grown by 320% this year!"</p>
                             <div class="text-muted small">
                                 <i class="bi bi-quote me-2"></i>1 month ago
                             </div>
@@ -2116,129 +1821,139 @@
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card">
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-3"
-                                    width="60" height="60" alt="Suman Basnet">
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Suman Basnet</h6>
-                                    <small class="text-muted">New Investor</small>
-                                    <div class="mt-1">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold">Amit Gurung</h6>
+                                <small class="text-muted">Value Investor</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
                                 </div>
                             </div>
-                            <p class="card-text">"As a beginner in the Nepalese stock market, Yadav's fundamental
-                                analysis tutorials and stock picks have been invaluable. I feel much more confident in
-                                my investment decisions now."</p>
+                            <p class="card-text">"As a long-term investor, Yadav's value investing principles have helped me build a portfolio that consistently outperforms the NEPSE index by 18% annually."</p>
                             <div class="text-muted small">
-                                <i class="bi bi-quote me-2"></i>2 weeks ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Testimonials -->
-                <!-- Professional Investor Testimonial -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%); color: #fff;">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://randomuser.me/api/portraits/men/42.jpg"
-                                    class="rounded-circle me-3 border border-3 border-warning" width="60" height="60"
-                                    alt="Rajesh Koirala">
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Rajesh Koirala</h6>
-                                    <small class="text-warning">Portfolio Manager, NIBL Ace Capital</small>
-                                    <div class="mt-1">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="card-text">"Yadav's market analysis has been instrumental in shaping our investment strategies. His deep understanding of NEPSE's technical indicators has helped us consistently outperform the market by 18% annually."</p>
-                            <div class="text-warning small">
-                                <i class="bi bi-quote me-2"></i>3 months ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Day Trader Testimonial -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: #fff;">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://randomuser.me/api/portraits/women/63.jpg"
-                                    class="rounded-circle me-3 border border-3 border-warning" width="60" height="60"
-                                    alt="Priya Sharma">
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Priya Sharma</h6>
-                                    <small class="text-warning">Full-time Day Trader</small>
-                                    <div class="mt-1">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="card-text">"The technical analysis strategies I've learned from Yadav have completely transformed my trading. My win rate improved from 45% to 78% within just 3 months of following his guidance."</p>
-                            <div class="text-warning small">
-                                <i class="bi bi-quote me-2"></i>2 weeks ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Long-term Investor Testimonial -->
-                <div class="col-md-6">
-                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #198754 0%, #0d6e3f 100%); color: #fff;">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://randomuser.me/api/portraits/men/65.jpg"
-                                    class="rounded-circle me-3 border border-3 border-warning" width="60" height="60"
-                                    alt="Amit Gurung">
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Amit Gurung</h6>
-                                    <small class="text-warning">Retired Banker & Investor</small>
-                                    <div class="mt-1">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="card-text">"The technical analysis webinars are exceptional! I've improved my
-                                trading strategy significantly and now make more informed decisions. The support team is
-                                always helpful too."</p>
-                            <div class="small opacity-75">
                                 <i class="bi bi-quote me-2"></i>3 weeks ago
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div
-                        class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card bg-dark text-white">
+                <!-- Testimonial 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%); color: #fff;">
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://randomuser.me/api/portraits/men/82.jpg"
-                                    class="rounded-circle me-3 border border-3 border-warning" width="60" height="60"
-                                    alt="Amit Gurung">
-                                <div>
-                                    <h6 class="mb-0 fw-bold text-white">Amit Gurung</h6>
-                                    <small class="text-white-50">Portfolio Manager</small>
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold text-white">Sarina Karki</h6>
+                                <small class="text-warning">Financial Blogger</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="card-text">"Yadav's technical analysis webinars transformed my trading approach. My blog's stock pick accuracy improved by 40% after implementing his methods."</p>
+                            <div class="text-warning small">
+                                <i class="bi bi-quote me-2"></i>1 month ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #198754 0%, #0d6e3f 100%); color: #fff;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold text-white">Bikash Thapa</h6>
+                                <small class="text-warning">Options Trader</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="card-text">"The options strategies I learned helped me turn $5,000 into $12,000 in 3 months. The risk management techniques are game-changing!"</p>
+                            <div class="text-warning small">
+                                <i class="bi bi-quote me-2"></i>2 months ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold">Nisha Rai</h6>
+                                <small class="text-muted">Fund Manager</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="card-text">"Yadav's market sentiment analysis is unmatched. Our portfolio performance improved by 18% after incorporating his strategies."</p>
+                            <div class="text-muted small">
+                                <i class="bi bi-quote me-2"></i>1 month ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 7 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: #fff;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold text-white">Ramu Bhattrai</h6>
+                                <small class="text-warning">Equity Analyst</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="card-text">"Yadav's market insights are incredibly accurate. His technical analysis helped me identify the perfect entry and exit points, boosting my trading success rate by 65%."</p>
+                            <div class="text-warning small">
+                                <i class="bi bi-quote me-2"></i>3 weeks ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 8 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition-all testimonial-card bg-dark text-white">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <h6 class="mb-0 fw-bold text-white">Hari Prasad Bhandari</h6>
+                                <small class="text-white-50">Retail Investor</small>
+                                <div class="mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="card-text">"As a beginner, Yadav's mentorship was invaluable. His clear explanations and practical strategies helped me grow my initial investment by 180% in my first year of trading."</p>
+                            <div class="text-muted small">
+                                <i class="bi bi-quote me-2"></i>2 months ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
                                     <div class="mt-1">
                                         <i class="bi bi-star-fill text-warning"></i>
                                         <i class="bi bi-star-fill text-warning"></i>
